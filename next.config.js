@@ -4,14 +4,11 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  async rewrites() {
-    return [
-      {
-        source: '/uploads/:path*',
-        destination: 'http://localhost:8000/uploads/:path*',
-      },
-    ]
-  },
+  // Configuración para exportación estática (FTP)
+  output: 'export',
+  trailingSlash: true,
+  // Los rewrites no funcionan en modo export estático
+  // La API debe estar configurada directamente en NEXT_PUBLIC_API_URL
 }
 
 module.exports = nextConfig

@@ -24,6 +24,9 @@ pnpm-debug.log*
 .env*.local
 .env.production
 
+# Next.js output folder for static export
+out/
+
 # Vercel
 .vercel
 
