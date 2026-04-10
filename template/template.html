@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Mantenimiento C.A. - Vista Previa</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+        .carousel-slide { transition: transform 0.5s ease-in-out; }
+        .service-card:hover { transform: translateY(-5px); }
+        .smooth-scroll { scroll-behavior: smooth; }
+    </style>
+</head>
+<body class="smooth-scroll bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="bg-white shadow-md sticky top-0 z-50">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center">
+                <div class="bg-blue-600 text-white p-2 rounded-md mr-3">
+                    <i class="fas fa-tools text-xl"></i>
+                </div>
+                <h1 class="text-xl md:text-2xl font-bold text-gray-800">Global Mantenimiento C.A.</h1>
+            </div>
+            <nav class="hidden md:flex space-x-8">
+                <a href="#inicio" class="text-gray-700 hover:text-blue-600 font-medium">Inicio</a>
+                <a href="#quienes-somos" class="text-gray-700 hover:text-blue-600 font-medium">Quiénes Somos</a>
+                <a href="#servicios" class="text-gray-700 hover:text-blue-600 font-medium">Servicios</a>
+                <a href="#trabajos" class="text-gray-700 hover:text-blue-600 font-medium">Trabajos</a>
+                <a href="#contacto" class="text-gray-700 hover:text-blue-600 font-medium">Contacto</a>
+            </nav>
+            <button class="bg-blue-600 text-white px-4 py-2 rounded-md hover:bg-blue-700 font-medium">
+                <i class="fas fa-phone mr-2"></i>Contáctanos
+            </button>
+        </div>
+    </header>
+
+    <!-- Sección Hero con Carrusel -->
+    <section id="inicio" class="relative overflow-hidden bg-gradient-to-r from-blue-900 to-blue-700 text-white py-12 md:py-20">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <h2 class="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+                        Especialistas en <span class="text-yellow-300">Mantenimiento Industrial</span>
+                    </h2>
+                    <p class="text-xl mb-6 text-blue-100">
+                        Comprometidos con la calidad, los plazos establecidos y los precios justos.
+                    </p>
+                    <div class="flex space-x-4">
+                        <button class="bg-yellow-500 text-blue-900 font-bold px-6 py-3 rounded-md hover:bg-yellow-400 transition">
+                            Solicitar Presupuesto
+                        </button>
+                        <button class="border-2 border-white text-white font-bold px-6 py-3 rounded-md hover:bg-white hover:text-blue-900 transition">
+                            Ver Servicios
+                        </button>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2">
+                    <!-- Carrusel de servicios -->
+                    <div class="relative bg-white/10 backdrop-blur-sm rounded-xl p-4 md:p-6 border border-white/20">
+                        <h3 class="text-2xl font-bold mb-6 text-center">Nuestros Servicios</h3>
+                        
+                        <div class="relative overflow-hidden rounded-lg">
+                            <div class="flex carousel-slide">
+                                <!-- Slide 1: Mantenimiento Mecánico -->
+                                <div class="w-full flex-shrink-0 p-4">
+                                    <div class="bg-blue-50 border-2 border-blue-200 rounded-xl p-6 shadow-lg">
+                                        <div class="flex flex-col items-center text-center">
+                                            <div class="mb-4 text-blue-700">
+                                                <i class="fas fa-tools text-5xl"></i>
+                                            </div>
+                                            <h4 class="text-xl font-bold text-gray-800 mb-3">Mantenimiento Mecánico</h4>
+                                            <p class="text-gray-700">Preventivo y correctivo de equipos mecánicos: bombas, transportadores, válvulas, sistemas neumáticos y oleohidráulicos.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            
+                            <!-- Controles del carrusel -->
+                            <button class="absolute left-2 top-1/2 transform -translate-y-1/2 bg-white/80 text-gray-800 p-2 rounded-full shadow-lg hover:bg-white">
+                                <i class="fas fa-chevron-left"></i>
+                            </button>
+                            <button class="absolute right-2 top-1/2 transform -translate-y-1/2 bg-white/80 text-gray-800 p-2 rounded-full shadow-lg hover:bg-white">
+                                <i class="fas fa-chevron-right"></i>
+                            </button>
+                            
+                            <!-- Indicadores del carrusel -->
+                            <div class="flex justify-center mt-4 space-x-2">
+                                <button class="w-3 h-3 rounded-full bg-yellow-400"></button>
+                                <button class="w-3 h-3 rounded-full bg-white/60"></button>
+                                <button class="w-3 h-3 rounded-full bg-white/60"></button>
+                                <button class="w-3 h-3 rounded-full bg-white/60"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Quiénes Somos -->
+    <section id="quienes-somos" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-12">Quiénes Somos</h2>
+            <div class="flex flex-col lg:flex-row items-center">
+                <div class="lg:w-1/2 mb-10 lg:mb-0">
+                    <div class="bg-blue-50 rounded-xl p-8 border border-blue-100">
+                        <h3 class="text-2xl font-bold text-blue-800 mb-6">Global Mantenimiento C.A.</h3>
+                        <p class="text-gray-700 text-lg mb-6">
+                            Somos una empresa especializada en servicios de mantenimiento industrial y ejecución de proyectos, 
+                            comprometida con la calidad, los plazos establecidos y los precios justos.
+                        </p>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-8">
+                            <div class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 text-xl mr-3 mt-1"></i>
+                                <span class="text-gray-700">Constantes, eficientes y responsables</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-shield-alt text-green-500 text-xl mr-3 mt-1"></i>
+                                <span class="text-gray-700">Criterios de seguridad garantizados</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-users text-green-500 text-xl mr-3 mt-1"></i>
+                                <span class="text-gray-700">Contribuimos al desarrollo social</span>
+                            </div>
+                            <div class="flex items-start">
+                                <i class="fas fa-clock text-green-500 text-xl mr-3 mt-1"></i>
+                                <span class="text-gray-700">Cumplimiento de plazos establecidos</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 lg:pl-12">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Nuestra Filosofía</h3>
+                    <ul class="space-y-4">
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4 flex-shrink-0">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            </div>
+                            <span class="text-gray-700">Prestar servicios de mantenimiento y proyectos dentro del plazo establecido, asegurando calidad a precios justos.</span>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="bg-blue-100 text-blue-600 rounded-full p-1 mr-4 flex-shrink-0">
+                                <div class="w-2 h-2 bg-blue-600 rounded-full"></div>
+                            </div>
+                            <span class="text-gray-700">Consolidarse como una empresa constante, eficiente y responsable.</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Servicios Detallados -->
+    <section id="servicios" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center text-gray-800 mb-4">Nuestros Servicios</h2>
+            <p class="text-gray-600 text-center max-w-3xl mx-auto mb-12">
+                Áreas de experiencia en mantenimiento industrial que ofrecemos a nuestros clientes
+            </p>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Tarjeta 1 -->
+                <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6">
+                        <h3 class="text-xl font-bold">Mantenimiento Mecánico Preventivo y Correctivo</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 text-lg mr-3 mt-1"></i>
+                                <span class="text-gray-700">Inspección y detección de fallas</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 text-lg mr-3 mt-1"></i>
+                                <span class="text-gray-700">Reparación de equipos mecánicos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 text-lg mr-3 mt-1"></i>
+                                <span class="text-gray-700">Sistemas neumáticos y oleohidráulicos</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 2 -->
+                <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6">
+                        <h3 class="text-xl font-bold">Mantenimiento Eléctrico e Instrumentación</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 text-lg mr-3 mt-1"></i>
+                                <span class="text-gray-700">Instalación eléctrica de baja tensión</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 text-lg mr-3 mt-1"></i>
+                                <span class="text-gray-700">Diseño de paneles de control</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 text-lg mr-3 mt-1"></i>
+                                <span class="text-gray-700">Automatización con PLC</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <!-- Tarjeta 3 -->
+                <div class="service-card bg-white rounded-xl shadow-lg overflow-hidden border border-gray-200 hover:shadow-xl transition-shadow">
+                    <div class="bg-gradient-to-r from-blue-600 to-blue-800 text-white p-6">
+                        <h3 class="text-xl font-bold">Mantenimiento de Calderas según Normas COVENIN</h3>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 text-lg mr-3 mt-1"></i>
+                                <span class="text-gray-700">Planificación y seguimiento de proyectos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 text-lg mr-3 mt-1"></i>
+                                <span class="text-gray-700">Paradas mayores de planta</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check-circle text-green-500 text-lg mr-3 mt-1"></i>
+                                <span class="text-gray-700">Cursos de calidad en gestión</span>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="py-16 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+        <div class="container mx-auto px-4">
+            <h2 class="text-3xl font-bold text-center mb-12">Contáctanos</h2>
+            <div class="flex flex-col lg:flex-row justify-between items-center">
+                <div class="lg:w-2/5 mb-10 lg:mb-0">
+                    <h3 class="text-2xl font-bold mb-6">Global Mantenimiento C.A.</h3>
+                    <p class="mb-8 text-blue-100">
+                        Especialistas en mantenimiento industrial y ejecución de proyectos. 
+                        Estamos comprometidos con ofrecer servicios de calidad, cumpliendo 
+                        plazos y precios justos.
+                    </p>
+                    
+                    <div class="space-y-5">
+                        <div class="flex items-center">
+                            <div class="bg-white/20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-phone text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Teléfono</p>
+                                <p class="text-blue-100">+58 241-XXX-XXXX</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-white/20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-envelope text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Email</p>
+                                <p class="text-blue-100">info@globalmantenimiento.site</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-center">
+                            <div class="bg-white/20 p-3 rounded-lg mr-4">
+                                <i class="fas fa-map-marker-alt text-xl"></i>
+                            </div>
+                            <div>
+                                <p class="font-medium">Ubicación</p>
+                                <p class="text-blue-100">Venezuela</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="lg:w-1/2 bg-white rounded-xl p-8 shadow-xl">
+                    <h3 class="text-2xl font-bold text-gray-800 mb-6">Solicita información</h3>
+                    <form class="space-y-6">
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Nombre</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Tu nombre">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Empresa</label>
+                                <input type="text" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Nombre de tu empresa">
+                            </div>
+                        </div>
+                        
+                        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                            <div>
+                                <label class="block text-gray-700 mb-2">Teléfono</label>
+                                <input type="tel" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Tu teléfono">
+                            </div>
+                            <div>
+                                <label class="block text-gray-700 mb-2">Email</label>
+                                <input type="email" class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500" placeholder="Tu email">
+                            </div>
+                        </div>
+                        
+                        <div>
+                            <label class="block text-gray-700 mb-2">Servicio de interés</label>
+                            <select class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option>Mantenimiento Mecánico</option>
+                                <option>Mantenimiento Eléctrico</option>
+                                <option>Mantenimiento de Calderas</option>
+                                <option>Proyectos Industriales</option>
+                            </select>
+                        </div>
+                        
+                        <button type="submit" class="w-full bg-blue-600 text-white font-bold py-3 rounded-lg hover:bg-blue-700 transition">
+                            Enviar Mensaje
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-10">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row justify-between items-center">
+                <div class="mb-6 md:mb-0">
+                    <div class="flex items-center mb-4">
+                        <div class="bg-blue-600 p-2 rounded-md mr-3">
+                            <i class="fas fa-tools text-xl"></i>
+                        </div>
+                        <h3 class="text-xl font-bold">Global Mantenimiento C.A.</h3>
+                    </div>
+                    <p class="text-gray-400 max-w-md">
+                        Especialistas en servicios de mantenimiento industrial y ejecución de proyectos, 
+                        comprometidos con la calidad, los plazos establecidos y los precios justos.
+                    </p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Enlaces rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-white">Inicio</a></li>
+                        <li><a href="#quienes-somos" class="text-gray-400 hover:text-white">Quiénes Somos</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-white">Servicios</a></li>
+                        <li><a href="#contacto" class="text-gray-400 hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-gray-500">
+                <p>© 2023 Global Mantenimiento C.A. - Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Script simple para el carrusel
+        document.addEventListener('DOMContentLoaded', function() {
+            const carousel = document.querySelector('.carousel-slide');
+            const indicators = document.querySelectorAll('.carousel-slide ~ div button');
+            let currentSlide = 0;
+            
+            // Función para cambiar slide
+            function goToSlide(index) {
+                currentSlide = index;
+                carousel.style.transform = `translateX(-${index * 100}%)`;
+                
+                // Actualizar indicadores
+                indicators.forEach((indicator, i) => {
+                    if(i === index) {
+                        indicator.classList.remove('bg-white/60');
+                        indicator.classList.add('bg-yellow-400');
+                    } else {
+                        indicator.classList.remove('bg-yellow-400');
+                        indicator.classList.add('bg-white/60');
+                    }
+                });
+            }
+            
+            // Configurar eventos para los indicadores
+            indicators.forEach((indicator, index) => {
+                indicator.addEventListener('click', () => goToSlide(index));
+            });
+            
+            // Cambio automático de slide
+            setInterval(() => {
+                currentSlide = (currentSlide + 1) % 4;
+                goToSlide(currentSlide);
+            }, 5000);
+        });
+    </script>
+</body>
+</html>

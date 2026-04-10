@@ -1,0 +1,128 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Skip Link - Accessibility */
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background: #000;
+  color: #fff;
+  padding: 8px 16px;
+  z-index: 100;
+  transition: top 0.3s;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.skip-link:focus {
+  top: 0;
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+/* ===== Global Focus Styles ===== */
+/* Visible focus indicators for keyboard navigation - Accessibility */
+*:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+/* Remove default focus for mouse users, keep for keyboard */
+*:focus:not(:focus-visible) {
+  outline: none;
+}
+
+/* Specific focus styles for interactive elements */
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+a:focus-visible {
+  outline: 3px solid #f59e0b;
+  outline-offset: 2px;
+}
+
+/* Links specifically */
+a {
+  transition: outline-color 0.2s ease;
+}
+
+/* Buttons specifically */
+button {
+  transition: outline-color 0.2s ease;
+}
+
+/* Tipografía base (la plantilla usaba Segoe UI) */
+body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+/* Carrusel: transición manejada por inline style en React, pero definimos la clase */
+.carousel-slide { transition: transform 0.5s ease-in-out; }
+
+.service-card:hover { transform: translateY(-5px); }
+
+.smooth-scroll { scroll-behavior: smooth; }
+
+/* Ajuste para anchors debajo del header sticky */
+.scroll-offset { scroll-margin-top: 5rem; /* ~80px: ajusta según la altura del header */ }
+
+/* Prevent text wrapping inside buttons and button-like inline links */
+button, a.inline-flex, .btn { white-space: nowrap; }
+
+/* Reveal on scroll utility: elements start slightly translated and transparent,
+	 then animate to place when they become visible. Works well for sections,
+	 cards and images. */
+.reveal {
+	opacity: 0;
+	transform: translateY(20px);
+	transition: opacity 700ms cubic-bezier(.2,.9,.2,1), transform 700ms cubic-bezier(.2,.9,.2,1);
+	will-change: opacity, transform;
+}
+.reveal.is-visible {
+	opacity: 1;
+	transform: translateY(0);
+}
+
+/* ===== prefers-reduced-motion ===== */
+/* Respect user preference for reduced motion */
+@media (prefers-reduced-motion: reduce) {
+  /* Disable smooth scrolling */
+  .smooth-scroll,
+  html {
+    scroll-behavior: auto !important;
+  }
+
+  /* Disable transitions and animations */
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+
+  /* Disable CSS animations for reveal */
+  .reveal {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+  }
+
+  /* Disable carousel slide transitions */
+  .carousel-slide {
+    transition: none !important;
+  }
+
+  /* Disable service card hover effects */
+  .service-card:hover {
+    transform: none !important;
+  }
+
+  /* Disable skip link transition */
+  .skip-link {
+    transition: none !important;
+  }
+}
+

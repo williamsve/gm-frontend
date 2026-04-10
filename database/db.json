@@ -1,0 +1,123 @@
+{
+  "users": [],
+  "trabajos": [
+    {
+      "id": 1,
+      "nombre": "Mantenimiento Preventivo - Planta A",
+      "cliente": "Industrias XYZ",
+      "descripcion": "Mantenimiento preventivo mensual de equipos industriales",
+      "fecha": "2024-01-15",
+      "categoria": "Mantenimiento",
+      "imagenes": ["/i (1).jpeg"],
+      "createdAt": "2024-01-15T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "nombre": "Reparación de Bomba Centrífuga",
+      "cliente": "Manufactura ABC",
+      "descripcion": "Reparación y calibración de bomba centrífuga industrial",
+      "fecha": "2024-02-20",
+      "categoria": "Reparación",
+      "imagenes": ["/i (2).jpeg"],
+      "createdAt": "2024-02-20T14:30:00.000Z"
+    },
+    {
+      "id": 3,
+      "nombre": "Instalación de Sistema de Lubricación",
+      "cliente": "Metalúrgica DEF",
+      "descripcion": "Instalación de sistema automático de lubricación",
+      "fecha": "2024-03-10",
+      "categoria": "Instalación",
+      "imagenes": ["/i (3).jpeg"],
+      "createdAt": "2024-03-10T09:15:00.000Z"
+    }
+  ],
+  "testimonios": [
+    {
+      "id": 1,
+      "nombre": "Carlos Rodríguez",
+      "empresa": "Industrias XYZ",
+      "contenido": "Excelente servicio de mantenimiento. El equipo fue muy profesional y entregó el trabajo a tiempo.",
+      "rating": 5,
+      "fecha": "2024-01-20",
+      "avatar": "CR",
+      "estado": "aprobado"
+    },
+    {
+      "id": 2,
+      "nombre": "María González",
+      "empresa": "Manufactura ABC",
+      "contenido": "Muy satisfecho con la reparación de nuestra bomba. El resultado superó nuestras expectativas.",
+      "rating": 5,
+      "fecha": "2024-02-25",
+      "avatar": "MG",
+      "estado": "aprobado"
+    }
+  ],
+  "proyectos": [
+    {
+      "id": 1,
+      "nombre": "Sitio Web Corporativo",
+      "cliente": "Empresa ABC",
+      "descripcion": "Desarrollo de sitio web corporativo moderno y responsivo",
+      "fecha": "2024-01-15",
+      "categoria": "Desarrollo Web",
+      "imagenes": ["/i (4).jpeg"],
+      "createdAt": "2024-01-15T10:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "nombre": "E-commerce Tienda",
+      "cliente": "Tienda XYZ",
+      "descripcion": "Desarrollo de tienda en línea con carrito de compras",
+      "fecha": "2024-02-20",
+      "categoria": "E-commerce",
+      "imagenes": ["/i (5).jpeg"],
+      "createdAt": "2024-02-20T14:30:00.000Z"
+    }
+  ],
+  "servicios": [
+    {
+      "id": 1,
+      "nombre": "Mantenimiento Preventivo",
+      "descripcion": "Programa de mantenimiento planificado para prevenir fallas en equipos industriales",
+      "imagen": "/i (1).jpeg",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 2,
+      "nombre": "Mantenimiento Correctivo",
+      "descripcion": "Reparación y solución de fallas en maquinaria y equipos industriales",
+      "imagen": "/i (2).jpeg",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 3,
+      "nombre": "Lubricación Industrial",
+      "descripcion": "Servicio especializado de lubricación para todo tipo de maquinaria",
+      "imagen": "/i (3).jpeg",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 4,
+      "nombre": "Alineación de Equipos",
+      "descripcion": "Alineación precisa de ejes, bombas y equipos rotativos",
+      "imagen": "/i (4).jpeg",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 5,
+      "nombre": "Balanceo Dinámico",
+      "descripcion": "Balanceo de rotores, ventiladores y equipos de rotación",
+      "imagen": "/i (5).jpeg",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    },
+    {
+      "id": 6,
+      "nombre": "Soldadura Especializada",
+      "descripcion": "Soldadura industrial en campo y taller para reparaciones críticas",
+      "imagen": "/i (6).jpeg",
+      "createdAt": "2024-01-01T00:00:00.000Z"
+    }
+  ]
+}

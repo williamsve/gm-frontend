@@ -1,0 +1,169 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "search": "Search",
+    "noResults": "No results found",
+    "retry": "Please try again later",
+    "back": "Back",
+    "next": "Next",
+    "previous": "Previous",
+    "close": "Close",
+    "view": "View",
+    "download": "Download",
+    "accept": "Accept",
+    "reject": "Reject",
+    "learnMore": "More info"
+  },
+  "cookieBanner": {
+    "title": "Cookie Policy",
+    "description": "We use cookies to improve your experience. By continuing to browse, you agree to our use of cookies as set out in our privacy policy.",
+    "privacyPolicy": "Privacy Policy"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "About Us",
+    "services": "Services",
+    "works": "Works",
+    "testimonials": "Testimonials",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Global Mantenimiento C.A.",
+    "subtitle": "Specialists in",
+    "highlight": "Industrial Maintenance",
+    "description": "Committed to quality, deadlines and fair prices.",
+    "cta": "Talk to us",
+    "ctaSecondary": "View Services",
+    "whatWeDo": "What we do",
+    "scrollDown": "Scroll down"
+  },
+  "mecanico": {
+    "title": "Mechanical Maintenance",
+    "desc": "Preventive and corrective maintenance of mechanical equipment: pumps, conveyors, valves, pneumatic and oil-hydraulic systems."
+  },
+  "electrico": {
+    "title": "Electrical Maintenance",
+    "desc": "Electrical installation, control panel design and automation with PLC."
+  },
+  "calderas": {
+    "title": "Boiler Maintenance",
+    "desc": "According to COVENIN Standards: planning, major plant shutdowns and quality management."
+  },
+  "instrumentacion": {
+    "title": "Instrumentation and Control",
+    "desc": "Calibration, maintenance of instruments and industrial control systems."
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Areas of expertise in industrial maintenance that we offer to our clients",
+    "noResults": "No services available",
+    "loading": "Loading...",
+    "error": "Error loading services"
+  },
+  "works": {
+    "title": "Projects Completed",
+    "subtitle": "Projects carried out for different companies in the industrial sector",
+    "viewProject": "View Project",
+    "noProjects": "No projects available",
+    "yearsExperience": "Years of Experience",
+    "projectsCompleted": "Projects Completed",
+    "satisfiedClients": "Satisfied Clients",
+    "technicalSupport": "Technical Support"
+  },
+  "testimonials": {
+    "title": "What our clients say",
+    "subtitle": "With more than 500 successful projects, these are testimonials from some of our satisfied clients",
+    "noTestimonials": "No testimonials available"
+  },
+  "contact": {
+    "title": "Contact Us",
+    "companyName": "Global Mantenimiento C.A.",
+    "description": "Specialists in industrial maintenance and project execution.",
+    "phone": "Phone",
+    "email": "Email",
+    "whatsapp": "Contact via WhatsApp",
+    "whatsappDesc": "Scan the QR or press the button to open the WhatsApp chat. Works on mobile and desktop via WhatsApp Web.",
+    "openWhatsapp": "Open WhatsApp",
+    "scanToOpen": "Scan with your phone to open WhatsApp",
+    "downloadQR": "Download QR"
+  },
+  "footer": {
+    "companyName": "Global Mantenimiento C.A.",
+    "companyDescription": "Specialists in industrial maintenance services and project execution, committed to quality, deadlines and fair prices.",
+    "quickLinks": "Quick Links",
+    "rightsReserved": "All rights reserved."
+  },
+  "cta": {
+    "title": "Need maintenance services?",
+    "subtitle": "Contact us today and get a free quote",
+    "button": "Contact Us"
+  },
+  "privacyPolicy": {
+    "title": "Privacy Policy",
+    "subtitle": "Your privacy is important to us",
+    "lastUpdate": "Last updated",
+    "date": "April 10, 2026",
+    "questions": "Do you have questions about our privacy policy?",
+    "contactMessage": "We are committed to protecting your data and resolving any concerns.",
+    "sections": {
+      "introduction": {
+        "title": "Introduction",
+        "content": "Global Mantenimiento C.A. (\"we\", \"our company\" or \"Global Mantenimiento\") is committed to protecting the privacy of users of our website {{companyDomain}}. This Privacy Policy explains how we collect, use, disclose, and protect your information when you visit our website. By accessing or using our website, you agree to the practices described in this policy."
+      },
+      "informationCollected": {
+        "title": "Information We Collect",
+        "content": "As an informational website, we collect only the following data:\n\n• Browser and device information: browser type, operating system, IP address, device type, and anonymous cookie identifiers.\n\n• Usage information: pages visited, time spent on site, clicked links, and anonymous browsing behavior.\n\n• Cookies: we use essential cookies for site functionality and anonymous analytics cookies to improve our website. We do not collect personally identifiable information such as name, email, or phone number through this informational website."
+      },
+      "useOfInformation": {
+        "title": "How We Use Your Information",
+        "content": "The information collected is used to:\n\n• Analyze website usage and improve user experience.\n\n• Detect and prevent malicious activity or security violations.\n\n• Comply with applicable legal and regulatory obligations.\n\n• Generate anonymous statistics about website traffic.\n\nWe do not sell, rent, or share your information with third parties for marketing purposes."
+      },
+      "cookies": {
+        "title": "Cookies and Similar Technologies",
+        "content": "We use cookies and similar technologies to improve your experience on our website:\n\n• Essential cookies: required for basic site functionality, such as maintaining your session and remembering your preferences.\n\n• Analytics cookies: help us understand how visitors interact with the website, allowing us to continuously improve.\n\n• You can disable cookies through your browser settings. However, some site features may not work properly without cookies."
+      },
+      "thirdPartyServices": {
+        "title": "Third-Party Services",
+        "content": "Our website may use the following third-party services:\n\n• Google Analytics: to analyze website usage anonymously. You can learn more about Google's privacy practices in their privacy policy.\n\n• Hosting providers: to store and serve website content.\n\nThese third parties have their own privacy policies and data handling practices."
+      },
+      "dataProtection": {
+        "title": "Data Protection Measures",
+        "content": "We implement appropriate technical and organizational security measures to protect your information:\n\n• Secure connections via HTTPS protocol.\n\n• Regular monitoring of our systems to detect vulnerabilities.\n\n• Data storage on secure servers with restricted access.\n\n• Data retention policies to remove unnecessary information.\n\nAlthough we take reasonable measures to protect your information, no method of Internet transmission or electronic storage is 100% secure."
+      },
+      "userRights": {
+        "title": "Your Rights",
+        "content": "As a user of our website, you have the following rights:\n\n• Right of access: you can request information about the data we collect.\n\n• Right to correction: you can request correction of inaccurate data.\n\n• Right to deletion: you can request deletion of your data (when applicable).\n\n• Right to object: you can reject the processing of your data for analytical purposes.\n\n• Right to disable cookies: you can configure your browser to reject all cookies.\n\nTo exercise any of these rights, contact us using the information provided below."
+      },
+      "childrenPrivacy": {
+        "title": "Children's Privacy",
+        "content": "Our website is directed to a general audience and is not specifically designed to attract minors. We do not deliberately collect personal information from children under 13. If we discover that we have collected information from a minor, we will take steps to delete such information from our records."
+      },
+      "policyChanges": {
+        "title": "Changes to This Policy",
+        "content": "We may occasionally update this Privacy Policy to reflect changes in our practices or for operational, legal, or regulatory reasons. Any significant changes will be communicated through a prominent notice on our website. The \"Last Updated\" date at the top of this policy indicates when the last change was made.\n\nWe recommend that you review this Privacy Policy periodically to stay informed about how we protect your information."
+      },
+      "contact": {
+        "title": "Contact Us",
+        "content": "If you have any questions about this Privacy Policy, wish to exercise your rights, or need to report a privacy issue, contact us:\n\n• Email: {{email}}\n\n• Phone: {{phone}}\n\n• Address: {{address}}\n\nWe will respond to your request within 30 days."
+      }
+    },
+    "contactInfo": {
+      "email": "info@globalmantenimiento.site",
+      "phone": "+58 412-456-7890",
+      "address": "Caracas, Venezuela"
+    }
+  },
+  "footer": {
+    "companyName": "Global Mantenimiento C.A.",
+    "companyDescription": "Specialists in industrial maintenance services and project execution, committed to quality, deadlines and fair prices.",
+    "quickLinks": "Quick Links",
+    "rightsReserved": "All rights reserved.",
+    "companyDomain": "globalmantenimiento.site"
+  }
+}

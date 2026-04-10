@@ -1,0 +1,169 @@
+{
+  "common": {
+    "loading": "Caricamento...",
+    "error": "Errore",
+    "save": "Salva",
+    "cancel": "Annulla",
+    "delete": "Elimina",
+    "edit": "Modifica",
+    "add": "Aggiungi",
+    "search": "Cerca",
+    "noResults": "Nessun risultato trovato",
+    "retry": "Per favore, riprova più tardi",
+    "back": "Indietro",
+    "next": "Avanti",
+    "previous": "Precedente",
+    "close": "Chiudi",
+    "view": "Vedi",
+    "download": "Scarica",
+    "accept": "Accetta",
+    "reject": "Rifiuta",
+    "learnMore": "Maggiori info"
+  },
+  "cookieBanner": {
+    "title": "Politica sui cookie",
+    "description": "Utilizziamo i cookie per migliorare la tua esperienza. Continuando a navigare, accetti il nostro utilizzo dei cookie come descritto nella nostra informativa sulla privacy.",
+    "privacyPolicy": "Informativa sulla privacy"
+  },
+  "nav": {
+    "home": "Home",
+    "about": "Chi Siamo",
+    "services": "Servizi",
+    "works": "Lavori",
+    "testimonials": "Testimonianze",
+    "contact": "Contatti"
+  },
+  "hero": {
+    "title": "Global Mantenimiento C.A.",
+    "subtitle": "Specialisti in",
+    "highlight": "Manutenzione Industriale",
+    "description": "Impegnati per qualità, scadenze e prezzi equi.",
+    "cta": "Parla con noi",
+    "ctaSecondary": "Vedi Servizi",
+    "whatWeDo": "Cosa facciamo",
+    "scrollDown": "Scorri verso il basso"
+  },
+  "mecanico": {
+    "title": "Manutenzione Meccanica",
+    "desc": "Manutenzione preventiva e correttiva di apparecchiature meccaniche: pompe, trasportatori, valvole, sistemi pneumatici e oleoidraulici."
+  },
+  "electrico": {
+    "title": "Manutenzione Elettrica",
+    "desc": "Installazione elettrica, progettazione di quadri di controllo e automazione con PLC."
+  },
+  "calderas": {
+    "title": "Manutenzione Caldaie",
+    "desc": "Secondo le Norme COVENIN: pianificazione, fermate maggiori di impianto e gestione della qualità."
+  },
+  "instrumentacion": {
+    "title": "Strumentazione e Controllo",
+    "desc": "Calibrazione, manutenzione di strumenti e sistemi di controllo industriale."
+  },
+  "services": {
+    "title": "I Nostri Servizi",
+    "subtitle": "Aree di competenza in manutenzione industriale che offriamo ai nostri clienti",
+    "noResults": "Nessun servizio disponibile",
+    "loading": "Caricamento...",
+    "error": "Errore nel caricamento dei servizi"
+  },
+  "works": {
+    "title": "Progetti Realizzati",
+    "subtitle": "Progetti realizzati per diverse aziende del settore industriale",
+    "viewProject": "Vedi Progetto",
+    "noProjects": "Nessun progetto disponibile",
+    "yearsExperience": "Anni di Esperienza",
+    "projectsCompleted": "Progetti Completati",
+    "satisfiedClients": "Clienti Soddisfatti",
+    "technicalSupport": "Supporto Tecnico"
+  },
+  "testimonials": {
+    "title": "Cosa dicono i nostri clienti",
+    "subtitle": "Con più di 500 progetti riusciti, queste sono le testimonianze di alcuni dei nostri clienti soddisfatti",
+    "noTestimonials": "Nessuna testimonianza disponibile"
+  },
+  "contact": {
+    "title": "Contattaci",
+    "companyName": "Global Mantenimiento C.A.",
+    "description": "Specialisti in manutenzione industriale ed esecuzione di progetti.",
+    "phone": "Telefono",
+    "email": "Email",
+    "whatsapp": "Contatta via WhatsApp",
+    "whatsappDesc": "Scansiona il QR o premi il pulsante per aprire la chat WhatsApp. Funziona su cellulare e computer tramite WhatsApp Web.",
+    "openWhatsapp": "Apri WhatsApp",
+    "scanToOpen": "Scansiona con il tuo telefono per aprire WhatsApp",
+    "downloadQR": "Scarica QR"
+  },
+  "footer": {
+    "companyName": "Global Mantenimiento C.A.",
+    "companyDescription": "Specialisti in servizi di manutenzione industriale ed esecuzione di progetti, impegnati per qualità, scadenze e prezzi equi.",
+    "quickLinks": "Link Rapidi",
+    "rightsReserved": "Tutti i diritti riservati."
+  },
+  "cta": {
+    "title": "Hai bisogno di servizi di manutenzione?",
+    "subtitle": "Contattaci oggi e ottieni un preventivo gratuito",
+    "button": "Contattaci"
+  },
+  "privacyPolicy": {
+    "title": "Informativa sulla privacy",
+    "subtitle": "La tua privacy è importante per noi",
+    "lastUpdate": "Ultimo aggiornamento",
+    "date": "10 Aprile 2026",
+    "questions": "Hai domande sulla nostra informativa sulla privacy?",
+    "contactMessage": "Ci impegniamo a proteggere i tuoi dati e a risolvere eventuali problemi.",
+    "sections": {
+      "introduction": {
+        "title": "Introduzione",
+        "content": "Global Mantenimiento C.A. (\"noi\", \"la nostra azienda\" o \"Global Mantenimiento\") si impegna a proteggere la privacy degli utenti del nostro sito web {{companyDomain}}. Questa Informativa sulla privacy spiega come raccogliamo, utilizziamo, divulghiamo e proteggiamo le tue informazioni quando visiti il nostro sito web. Accedendo o utilizzando il nostro sito web, accetti le pratiche descritte in questa informativa."
+      },
+      "informationCollected": {
+        "title": "Informazioni che Raccogliamo",
+        "content": "Come sito web informativo, raccogliamo solo i seguenti dati:\n\n• Informazioni sul browser e dispositivo: tipo di browser, sistema operativo, indirizzo IP, tipo di dispositivo e identificativi cookie anonimi.\n\n• Informazioni sull'utilizzo: pagine visitate, tempo trascorso sul sito, link cliccati e comportamento di navigazione anonimo.\n\n• Cookie: utilizziamo cookie essenziali per il funzionamento del sito e cookie analitici anonimi per migliorare il nostro sito web. Non raccogliamo informazioni personali identificabili come nome, email o numero di telefono attraverso questo sito web informativo."
+      },
+      "useOfInformation": {
+        "title": "Come Utilizziamo le Tue Informazioni",
+        "content": "Le informazioni raccolte vengono utilizzate per:\n\n• Analizzare l'utilizzo del sito web e migliorare l'esperienza dell'utente.\n\n• Rilevare e prevenire attività dannose o violazioni della sicurezza.\n\n• Adempiere agli obblighi legali e normativi applicabili.\n\n• Generare statistiche anonime sul traffico del sito web.\n\nNon vendiamo, affittiamo o condividiamo le tue informazioni con terzi per scopi di marketing."
+      },
+      "cookies": {
+        "title": "Cookie e Tecnologie Simili",
+        "content": "Utilizziamo cookie e tecnologie simili per migliorare la tua esperienza sul nostro sito web:\n\n• Cookie essenziali: necessari per le funzionalità di base del sito, come mantenere la sessione attiva e ricordare le tue preferenze.\n\n• Cookie analitici: ci aiutano a capire come i visitatori interagiscono con il sito web, permettendoci di migliorare continuamente.\n\n• Puoi disattivare i cookie tramite le impostazioni del tuo browser. Tuttavia, alcune funzionalità del sito potrebbero non funzionare correttamente senza cookie."
+      },
+      "thirdPartyServices": {
+        "title": "Servizi di Terzi",
+        "content": "Il nostro sito web può utilizzare i seguenti servizi di terzi:\n\n• Google Analytics: per analizzare l'utilizzo del sito web in modo anonimo. Puoi trovare ulteriori informazioni sulle pratiche di privacy di Google nella loro informativa sulla privacy.\n\n• Fornitori di hosting: per archiviare e servire i contenuti del sito web.\n\nQuesti terzi hanno le proprie informative sulla privacy e pratiche di trattamento dei dati."
+      },
+      "dataProtection": {
+        "title": "Misure di Protezione dei Dati",
+        "content": "Implementiamo misure di sicurezza tecniche e organizzative appropriate per proteggere le tue informazioni:\n\n• Connessioni sicure tramite protocollo HTTPS.\n\n• Monitoraggio regolare dei nostri sistemi per rilevare vulnerabilità.\n\n• Archiviazione dei dati su server sicuri con accesso limitato.\n\n• Policy di conservazione dei dati per rimuovere informazioni non necessarie.\n\nSebbene adottiamo misure ragionevoli per proteggere le tue informazioni, nessun metodo di trasmissione su Internet o archiviazione elettronica è 100% sicuro."
+      },
+      "userRights": {
+        "title": "I Tuoi Diritti",
+        "content": "Come utente del nostro sito web, hai i seguenti diritti:\n\n• Diritto di accesso: puoi richiedere informazioni sui dati che raccogliamo.\n\n• Diritto di correzione: puoi richiedere la correzione di dati inesatti.\n\n• Diritto alla cancellazione: puoi richiedere la cancellazione dei tuoi dati (quando applicabile).\n\n• Diritto di opposizione: puoi rifiutare il trattamento dei tuoi dati per scopi analitici.\n\n• Diritto di disabilitare i cookie: puoi configurare il tuo browser per rifiutare tutti i cookie.\n\nPer esercitare uno di questi diritti, contattaci utilizzando le informazioni fornite sotto."
+      },
+      "childrenPrivacy": {
+        "title": "Privacy dei Minori",
+        "content": "Il nostro sito web è diretto a un pubblico generale e non è specificamente progettato per attirare minori. Non raccogliamo intenzionalmente informazioni personali da bambini di età inferiore ai 13 anni. Se scopriamo di aver raccolto informazioni da un minore, adopteremo misure per eliminare tali informazioni dai nostri registri."
+      },
+      "policyChanges": {
+        "title": "Modifiche a questa Informativa",
+        "content": "Potremmo occasionalmente aggiornare questa Informativa sulla privacy per riflettere cambiamenti nelle nostre pratiche o per motivi operativi, legali o normativi. Eventuali modifiche significative verranno comunicate tramite un avviso prominente sul nostro sito web. La data \"Ultimo aggiornamento\" nella parte superiore di questa informativa indica quando è stata apportata l'ultima modifica.\n\nTi consigliamo di rivedere questa Informativa sulla privacy periodicamente per rimanere informato su come proteggiamo le tue informazioni."
+      },
+      "contact": {
+        "title": "Contattaci",
+        "content": "Se hai domande su questa Informativa sulla privacy, desideri esercitare i tuoi diritti o hai bisogno di segnalare un problema di privacy, contattaci:\n\n• Email: {{email}}\n\n• Telefono: {{phone}}\n\n• Indirizzo: {{address}}\n\nRisponderemo alla tua richiesta entro 30 giorni."
+      }
+    },
+    "contactInfo": {
+      "email": "info@globalmantenimiento.site",
+      "phone": "+58 412-456-7890",
+      "address": "Caracas, Venezuela"
+    }
+  },
+  "footer": {
+    "companyName": "Global Mantenimiento C.A.",
+    "companyDescription": "Specialisti in servizi di manutenzione industriale ed esecuzione di progetti, impegnati per qualità, scadenze e prezzi equi.",
+    "quickLinks": "Link Rapidi",
+    "rightsReserved": "Tutti i diritti riservati.",
+    "companyDomain": "globalmantenimiento.site"
+  }
+}

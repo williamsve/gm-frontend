@@ -1,0 +1,169 @@
+{
+  "common": {
+    "loading": "Laden...",
+    "error": "Fehler",
+    "save": "Speichern",
+    "cancel": "Abbrechen",
+    "delete": "Löschen",
+    "edit": "Bearbeiten",
+    "add": "Hinzufügen",
+    "search": "Suchen",
+    "noResults": "Keine Ergebnisse gefunden",
+    "retry": "Bitte versuchen Sie es später erneut",
+    "back": "Zurück",
+    "next": "Weiter",
+    "previous": "Zurück",
+    "close": "Schließen",
+    "view": "Ansehen",
+    "download": "Herunterladen",
+    "accept": "Akzeptieren",
+    "reject": "Ablehnen",
+    "learnMore": "Mehr info"
+  },
+  "cookieBanner": {
+    "title": "Cookie-Richtlinie",
+    "description": "Wir verwenden Cookies, um Ihre Erfahrung zu verbessern. Durch die weitere Nutzung stimmen Sie unserer Verwendung von Cookies gemäß unserer Datenschutzrichtlinie zu.",
+    "privacyPolicy": "Datenschutzrichtlinie"
+  },
+  "nav": {
+    "home": "Startseite",
+    "about": "Über Uns",
+    "services": "Dienstleistungen",
+    "works": "Arbeiten",
+    "testimonials": "Referenzen",
+    "contact": "Kontakt"
+  },
+  "hero": {
+    "title": "Global Mantenimiento C.A.",
+    "subtitle": "Spezialisten für",
+    "highlight": "Industrielle Wartung",
+    "description": "Verpflichtet zu Qualität, Fristen und fairen Preisen.",
+    "cta": "Mit uns sprechen",
+    "ctaSecondary": "Dienstleistungen ansehen",
+    "whatWeDo": "Was wir tun",
+    "scrollDown": "Nach unten scrollen"
+  },
+  "mecanico": {
+    "title": "Mechanische Wartung",
+    "desc": "Präventive und korrektive Wartung von mechanischen Geräten: Pumpen, Förderer, Ventile, pneumatische und ölhydraulische Systeme."
+  },
+  "electrico": {
+    "title": "Elektrische Wartung",
+    "desc": "Elektrische Installation, Steuerungstableau-Design und Automatisierung mit PLC."
+  },
+  "calderas": {
+    "title": "Kesselwartung",
+    "desc": "Nach COVENIN-Normen: Planung, größere Werksabschaltungen und Qualitätsmanagement."
+  },
+  "instrumentacion": {
+    "title": "Instrumentierung und Steuerung",
+    "desc": "Kalibrierung, Wartung von Instrumenten und industriellen Steuersystemen."
+  },
+  "services": {
+    "title": "Unsere Dienstleistungen",
+    "subtitle": "Kompetenzbereiche in der industriellen Wartung, die wir unseren Kunden anbieten",
+    "noResults": "Keine Dienstleistungen verfügbar",
+    "loading": "Laden...",
+    "error": "Fehler beim Laden der Dienstleistungen"
+  },
+  "works": {
+    "title": "Abgeschlossene Projekte",
+    "subtitle": "Projekte für verschiedene Unternehmen der Industrie durchgeführt",
+    "viewProject": "Projekt Ansehen",
+    "noProjects": "Keine Projekte verfügbar",
+    "yearsExperience": "Jahre Erfahrung",
+    "projectsCompleted": "Abgeschlossene Projekte",
+    "satisfiedClients": "Zufriedene Kunden",
+    "technicalSupport": "Technischer Support"
+  },
+  "testimonials": {
+    "title": "Was unsere Kunden sagen",
+    "subtitle": "Mit mehr als 500 erfolgreichen Projekten, dies sind Referenzen von einigen unserer zufriedenen Kunden",
+    "noTestimonials": "Keine Referenzen verfügbar"
+  },
+  "contact": {
+    "title": "Kontaktieren Sie Uns",
+    "companyName": "Global Mantenimiento C.A.",
+    "description": "Spezialisten für industrielle Wartung und Projektausführung.",
+    "phone": "Telefon",
+    "email": "E-Mail",
+    "whatsapp": "Kontakt per WhatsApp",
+    "whatsappDesc": "Scannen Sie den QR oder drücken Sie die Schaltfläche, um den WhatsApp-Chat zu öffnen. Funktioniert auf Mobilgeräten und Computern über WhatsApp Web.",
+    "openWhatsapp": "WhatsApp öffnen",
+    "scanToOpen": "Mit Ihrem Telefon scannen, um WhatsApp zu öffnen",
+    "downloadQR": "QR herunterladen"
+  },
+  "footer": {
+    "companyName": "Global Mantenimiento C.A.",
+    "companyDescription": "Spezialisten für industrielle Wartungsdienstleistungen und Projektausführung, verpflichtet zu Qualität, Fristen und fairen Preisen.",
+    "quickLinks": "Schnelllinks",
+    "rightsReserved": "Alle Rechte vorbehalten."
+  },
+  "cta": {
+    "title": "Benötigen Sie Wartungsdienstleistungen?",
+    "subtitle": "Kontaktieren Sie uns heute und erhalten Sie ein kostenloses Angebot",
+    "button": "Kontakt"
+  },
+  "privacyPolicy": {
+    "title": "Datenschutzrichtlinie",
+    "subtitle": "Ihre Privatsphäre ist uns wichtig",
+    "lastUpdate": "Zuletzt aktualisiert",
+    "date": "10. April 2026",
+    "questions": "Haben Sie Fragen zu unserer Datenschutzrichtlinie?",
+    "contactMessage": "Wir sind zum Schutz Ihrer Daten und zur Lösung etwaiger Bedenken verpflichtet.",
+    "sections": {
+      "introduction": {
+        "title": "Einleitung",
+        "content": "Global Mantenimiento C.A. (\"wir\", \"unser Unternehmen\" oder \"Global Mantenimiento\") verpflichtet sich zum Schutz der Privatsphäre der Nutzer unserer Website {{companyDomain}}. Diese Datenschutzrichtlinie erläutert, wie wir Ihre Informationen sammeln, verwenden, offenlegen und schützen, wenn Sie unsere Website besuchen. Durch den Zugriff auf oder die Nutzung unserer Website erklären Sie sich mit den in dieser Richtlinie beschriebenen Praktiken einverstanden."
+      },
+      "informationCollected": {
+        "title": "Von uns gesammelte Informationen",
+        "content": "Als Informationswebsite sammeln wir nur folgende Daten:\n\n• Browser- und Geräteinformationen: Browsertyp, Betriebssystem, IP-Adresse, Gerätetyp und anonymisierte Cookie-Identifikatoren.\n\n• Nutzungsinformationen: besuchte Seiten, Zeit auf der Website, angeklickte Links und anonymes Surfverhalten.\n\n• Cookies: Wir verwenden essenzielle Cookies für den Website-Betrieb und analytische Cookies zur Verbesserung unserer Website. Wir sammeln keine persönlich identifizierbaren Informationen wie Name, E-Mail oder Telefonnummer über diese Informationswebsite."
+      },
+      "useOfInformation": {
+        "title": "Wie wir Ihre Informationen verwenden",
+        "content": "Die gesammelten Informationen werden verwendet für:\n\n• Analyse der Website-Nutzung und Verbesserung der Nutzererfahrung.\n\n• Erkennung und Verhinderung bösartiger Aktivitäten oder Sicherheitsverletzungen.\n\n• Erfüllung gesetzlicher und behördlicher Verpflichtungen.\n\n• Erstellung anonymer Statistiken über den Website-Verkehr.\n\nWir verkaufen, vermieten oder teilen Ihre Informationen nicht für Marketingzwecke mit Dritten."
+      },
+      "cookies": {
+        "title": "Cookies und ähnliche Technologien",
+        "content": "Wir verwenden Cookies und ähnliche Technologien, um Ihre Erfahrung auf unserer Website zu verbessern:\n\n• Essenzielle Cookies: erforderlich für grundlegende Website-Funktionen wie die Aufrechterhaltung Ihrer Sitzung und das Speichern Ihrer Präferenzen.\n\n• Analytische Cookies: helfen uns zu verstehen, wie Besucher mit der Website interagieren, sodass wir sie kontinuierlich verbessern können.\n\n• Sie können Cookies über Ihre Browsereinstellungen deaktivieren. Einige Website-Funktionen funktionieren jedoch möglicherweise nicht richtig ohne Cookies."
+      },
+      "thirdPartyServices": {
+        "title": "Drittanbieterdienste",
+        "content": "Unsere Website kann folgende Drittanbieterdienste nutzen:\n\n• Google Analytics: zur anonymen Analyse der Website-Nutzung. Weitere Informationen zu Googles Datenschutzpraktiken finden Sie in deren Datenschutzrichtlinie.\n\n• Hosting-Anbieter: zur Speicherung und Bereitstellung von Website-Inhalten.\n\nDiese Drittanbieter haben ihre eigenen Datenschutzrichtlinien und Praktiken zur Datenverarbeitung."
+      },
+      "dataProtection": {
+        "title": "Maßnahmen zum Datenschutz",
+        "content": "Wir implementieren geeignete technische und organisatorische Sicherheitsmaßnahmen zum Schutz Ihrer Informationen:\n\n• Sichere Verbindungen über HTTPS-Protokoll.\n\n• Regelmäßige Überwachung unserer Systeme zur Erkennung von Schwachstellen.\n\n• Datenspeicherung auf sicheren Servern mit eingeschränktem Zugriff.\n\n• Datenaufbewahrungsrichtlinien zur Entfernung unnötiger Informationen.\n\nObwohl wir angemessene Maßnahmen zum Schutz Ihrer Informationen ergreifen, ist keine Methode der Internetübertragung oder elektronischen Speicherung 100% sicher."
+      },
+      "userRights": {
+        "title": "Ihre Rechte",
+        "content": "Als Nutzer unserer Website haben Sie folgende Rechte:\n\n• Auskunftsrecht: Sie können Informationen über die von uns gesammelten Daten anfordern.\n\n• Recht auf Berichtigung: Sie können die Berichtigung ungenauer Daten anfordern.\n\n• Recht auf Löschung: Sie können die Löschung Ihrer Daten anfordern (falls zutreffend).\n\n• Widerspruchsrecht: Sie können die Verarbeitung Ihrer Daten für Analysezwecke ablehnen.\n\n• Recht zur Deaktivierung von Cookies: Sie können Ihren Browser so konfigurieren, dass alle Cookies abgelehnt werden.\n\nUm eines dieser Rechte auszuüben, kontaktieren Sie uns unter den unten angegebenen Informationen."
+      },
+      "childrenPrivacy": {
+        "title": "Datenschutz für Kinder",
+        "content": "Unsere Website richtet sich an die breite Öffentlichkeit und ist nicht speziell für Minderjährige konzipiert. Wir sammeln wissentlich keine persönlichen Informationen von Kindern unter 13 Jahren. Sollten wir feststellen, dass wir Informationen von einem Minderjährigen gesammelt haben, werden wir Schritte unternehmen, um diese Informationen aus unseren Aufzeichnungen zu löschen."
+      },
+      "policyChanges": {
+        "title": "Änderungen dieser Richtlinie",
+        "content": "Wir können diese Datenschutzrichtlinie gelegentlich aktualisieren, um Änderungen in unseren Praktiken oder aus betrieblichen, rechtlichen oder behördlichen Gründen widerzuspiegeln. Wesentliche Änderungen werden durch einen prominenten Hinweis auf unserer Website kommuniziert. Das Datum \"Zuletzt aktualisiert\" am oberen Rand dieser Richtlinie zeigt an, wann die letzte Änderung vorgenommen wurde.\n\nWir empfehlen Ihnen, diese Datenschutzrichtlinie regelmäßig zu überprüfen, um informiert zu bleiben, wie wir Ihre Informationen schützen."
+      },
+      "contact": {
+        "title": "Kontakt",
+        "content": "Wenn Sie Fragen zu dieser Datenschutzrichtlinie haben, Ihre Rechte ausüben möchten oder ein Datenschutzproblem melden müssen, kontaktieren Sie uns:\n\n• E-Mail: {{email}}\n\n• Telefon: {{phone}}\n\n• Adresse: {{address}}\n\nWir werden innerhalb von 30 Tagen auf Ihre Anfrage antworten."
+      }
+    },
+    "contactInfo": {
+      "email": "info@globalmantenimiento.site",
+      "phone": "+58 412-456-7890",
+      "address": "Caracas, Venezuela"
+    }
+  },
+  "footer": {
+    "companyName": "Global Mantenimiento C.A.",
+    "companyDescription": "Spezialisten für industrielle Wartungsdienstleistungen und Projektausführung, verpflichtet zu Qualität, Fristen und fairen Preisen.",
+    "quickLinks": "Schnelllinks",
+    "rightsReserved": "Alle Rechte vorbehalten.",
+    "companyDomain": "globalmantenimiento.site"
+  }
+}
