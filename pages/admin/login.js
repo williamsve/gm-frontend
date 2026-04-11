@@ -1,5 +1,4 @@
 import { useState, useEffect } from 'react'
-import { useRouter } from 'next/router'
 import { HiEye, HiEyeOff, HiLockClosed, HiUser, HiExclamationCircle } from 'react-icons/hi'
 import { useAuth } from '../../lib/useAuth'
 
@@ -9,16 +8,25 @@ export default function AdminLogin() {
   const [password, setPassword] = useState('')
   const [error, setError] = useState('')
   const [isLoading, setIsLoading] = useState(false)
-  
-  const router = useRouter()
+  const [mounted, setMounted] = useState(false)
+  const [router, setRouter] = useState(null)
+
+  // Solo ejecutar en cliente después de montaje
+  useEffect(() => {
+    import('next/router').then((module) => {
+      setRouter(module.useRouter())
+    })
+    setMounted(true)
+  }, [])
+
   const { login, isAuthenticated, loading } = useAuth()
 
-  // Redirigir si ya está autenticado
+  // Redirigir si ya está autenticado (solo en cliente)
   useEffect(() => {
-    if (!loading && isAuthenticated) {
+    if (mounted && router && !loading && isAuthenticated) {
       router.push('/admin')
     }
-  }, [isAuthenticated, loading, router])
+  }, [mounted, router, isAuthenticated, loading])
 
   const handleSubmit = async (e) => {
     e.preventDefault()
@@ -27,17 +35,17 @@ export default function AdminLogin() {
 
     const result = await login(username, password)
     
-    if (result.success) {
+    if (result.success && router) {
       router.push('/admin')
-    } else {
+    } else if (!result.success) {
       setError(result.error)
     }
     
     setIsLoading(false)
   }
 
-  // Mostrar loading mientras verifica autenticación
-  if (loading) {
+  // Mostrar loading mientras verifica autenticación (solo en cliente)
+  if (!mounted || loading) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 flex items-center justify-center">
         <div className="animate-spin rounded-full h-12 w-12 border-b-2 border-blue-600"></div>

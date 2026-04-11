@@ -4,11 +4,12 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-  // Configuración para exportación estática (FTP)
+  // Exportar como archivos estáticos (HTML/CSS/JS)
   output: 'export',
-  trailingSlash: true,
-  // Los rewrites no funcionan en modo export estático
-  // La API debe estar configurada directamente en NEXT_PUBLIC_API_URL
+  // Carpeta de salida para DonWeb (public_html)
+  distDir: 'public_html',
+  //Sin trailing slash para compatibilidad con servidores estáticos
+  trailingSlash: false,
 }
 
 module.exports = nextConfig
