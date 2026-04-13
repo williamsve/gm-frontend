@@ -1,3 +1,5 @@
+'use client'
+
 import { useState, useEffect } from 'react'
 import { HiEye, HiEyeOff, HiLockClosed, HiUser, HiExclamationCircle } from 'react-icons/hi'
 import { useAuth } from '../../lib/useAuth'

@@ -1,11 +1,21 @@
-import { useState } from 'react'
-import { useRouter } from 'next/router'
+'use client'
+
+import { useState, useEffect } from 'react'
 import { HiStar, HiUser, HiOfficeBuilding, HiBriefcase, HiCheck, HiX } from 'react-icons/hi'
 import { apiPost } from '../../../../lib/apiClient'
 
 export default function TestimonioInvitacion() {
-  const router = useRouter()
-  const { token } = router.query
+  const [token, setToken] = useState('')
+  const [mounted, setMounted] = useState(false)
+
+  // Extraer token de la URL sin usar NextRouter
+  useEffect(() => {
+    setMounted(true)
+    const pathParts = window.location.pathname.split('/')
+    const tokenPart = pathParts[pathParts.length - 1]
+    // Quitar la extensión .html si existe
+    setToken(tokenPart.replace('.html', ''))
+  }, [])
   
   const [formData, setFormData] = useState({
     nombre: '',
@@ -19,9 +29,8 @@ export default function TestimonioInvitacion() {
   const [isSubmitted, setIsSubmitted] = useState(false)
   const [tokenError, setTokenError] = useState(false)
 
-  // Validar token (en producción esto se haría contra la base de datos)
-  // Por ahora simulamos que el token es válido si existe
-  const isTokenValid = token && token.length > 0
+  // Validar token (solo en cliente después de montaje)
+  const isTokenValid = mounted && token && token.length > 0 && token !== '[token]'
 
   const validateForm = () => {
     const errors = {}
