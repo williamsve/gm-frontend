@@ -1,7 +1,7 @@
 import { useState, useEffect } from 'react'
 import { HiUser, HiBell, HiShieldCheck, HiColorSwatch, HiGlobe, HiSave } from 'react-icons/hi'
 import { SectionHeader, Button, SectionAnimation } from '../../ui'
-import { API_BASE_URL } from '../../lib/apiConfig'
+import { API_BASE_URL } from '../../../lib/apiConfig'
 
 export default function Configuracion() {
   const [activeTab, setActiveTab] = useState('notificaciones')
