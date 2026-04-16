@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { HiUser, HiBell, HiShieldCheck, HiColorSwatch, HiGlobe, HiSave } from 'react-icons/hi'
 import { SectionHeader, Button, SectionAnimation } from '../../ui'
+import { API_BASE_URL } from '../../lib/apiConfig'
 
 export default function Configuracion() {
   const [activeTab, setActiveTab] = useState('notificaciones')
@@ -25,7 +26,7 @@ export default function Configuracion() {
   const fetchConfiguracion = async () => {
     try {
       const token = localStorage.getItem('token')
-      const response = await fetch('http://localhost:8000/api/configuracion/', {
+      const response = await fetch(`${API_BASE_URL}/api/configuracion/`, {
         headers: {
           'Authorization': `Bearer ${token}`,
           'Content-Type': 'application/json'
@@ -54,7 +55,7 @@ export default function Configuracion() {
     
     try {
       const token = localStorage.getItem('token')
-      const response = await fetch('http://localhost:8000/api/configuracion/', {
+      const response = await fetch(`${API_BASE_URL}/api/configuracion/`, {
         method: 'POST',
         headers: {
           'Authorization': `Bearer ${token}`,

@@ -9,7 +9,7 @@ const nextConfig = {
   // Vercel maneja el build automáticamente
   // Variables de entorno embebidas en el build
   env: {
-    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL || 'https://api.globalmantenimiento.site',
+    NEXT_PUBLIC_API_URL: process.env.NEXT_PUBLIC_API_URL,
   },
 }
 
