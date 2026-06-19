@@ -60,22 +60,23 @@ function useActiveSection(sections) {
   return activeSection
 }
 
-function NavLink({ href, label, isActive, onClick }) {
+function NavLink({ href, label, isActive, onClick, className = '' }) {
   return (
-    <a 
-      href={href} 
+    <a
+      href={href}
       onClick={onClick}
       className={`
-        font-medium transition-colors duration-200 relative
-        ${isActive ? 'text-blue-600' : 'text-gray-700 hover:text-blue-600'}
+        block font-semibold transition-colors duration-200 relative py-2
+        ${isActive ? 'text-primary-600' : 'text-neutral-700 hover:text-primary-600'}
+        ${className}
       `}
-      style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}
+      aria-current={isActive ? 'page' : undefined}
     >
       {label}
       {isActive && (
-        <motion.span 
+        <motion.span
           layoutId="activeIndicator"
-          className="absolute -bottom-1 left-0 right-0 h-0.5 bg-blue-600 rounded-full"
+          className="absolute -bottom-1 left-0 right-0 h-0.5 bg-primary-600 rounded-full"
           initial={false}
           transition={{ type: 'spring', stiffness: 500, damping: 30 }}
         />
@@ -102,27 +103,41 @@ function MobileMenu({ isOpen, onClose, activeSection, sections }) {
             animate={{ x: 0 }}
             exit={{ x: '100%' }}
             transition={{ type: 'spring', damping: 25, stiffness: 200 }}
-            className="fixed top-0 right-0 bottom-0 w-72 bg-white z-50 md:hidden shadow-xl"
+            className="fixed top-0 right-0 bottom-0 w-[85vw] max-w-sm bg-white z-50 md:hidden shadow-2xl flex flex-col"
           >
-            <div className="p-4">
-              <div className="flex justify-between items-center mb-6">
-                <h2 className="text-lg font-bold text-gray-800">Menú</h2>
-                <button onClick={onClose} className="p-2 hover:bg-gray-100 rounded-lg">
-                  <Icon name="close" className="w-6 h-6" />
+            {/* Header del menú */}
+            <div className="p-5 border-b border-neutral-100 bg-neutral-50">
+              <div className="flex justify-between items-center">
+                <h2 className="text-lg font-bold text-neutral-800">Menú</h2>
+                <button
+                  onClick={onClose}
+                  className="p-2 hover:bg-neutral-100 rounded-xl transition-colors min-h-[44px] min-w-[44px]"
+                  aria-label="Cerrar menú"
+                >
+                  <Icon name="close" className="w-6 h-6 text-neutral-600" />
                 </button>
               </div>
-              
-              <nav className="space-y-2">
-                {sections.map(section => (
-                  <NavLink 
-                    key={section.id}
+            </div>
+
+            {/* Navegación */}
+            <nav className="flex-1 overflow-y-auto p-4 space-y-1">
+              {sections.map(section => (
+                <div key={section.id} className="w-full">
+                  <NavLink
                     href={`#${section.id}`}
                     label={section.label}
                     isActive={activeSection === section.id}
                     onClick={onClose}
                   />
-                ))}
-              </nav>
+                </div>
+              ))}
+            </nav>
+
+            {/* Selector de idioma */}
+            <div className="p-4 border-t border-neutral-100 bg-neutral-50">
+              <div className="flex items-center justify-center">
+                <LanguageSwitcher />
+              </div>
             </div>
           </motion.div>
         </>
@@ -143,7 +158,7 @@ function ScrollToTopButton() {
     if (!isMounted) return
     
     const handleScroll = () => {
-      setIsVisible(window.scrollY > 300)
+      setIsVisible(window.scrollY > 200)
     }
 
     window.addEventListener('scroll', handleScroll, { passive: true })
@@ -159,8 +174,8 @@ function ScrollToTopButton() {
   return (
     <button
       onClick={scrollToTop}
-      className="fixed bottom-6 right-6 z-40 bg-blue-600 text-white p-3 rounded-full shadow-lg hover:bg-blue-700 transition-colors"
-      aria-label="Volver arriba"
+      className="fixed bottom-6 right-6 z-40 bg-primary-600 text-white p-4 rounded-full shadow-lg hover:bg-primary-700 transition-all hover:scale-110 min-h-[48px] min-w-[48px]"
+      aria-label="Volver al inicio de la página"
     >
       <Icon name="keyboardArrowUp" className="w-6 h-6" />
     </button>
@@ -208,28 +223,29 @@ export default function Header({ translations }) {
 
   return (
     <>
-      <header className="backdrop-blur-xl bg-transparent shadow-md sticky top-0 z-50">
+      <header className="backdrop-blur-xl bg-white/95 shadow-md sticky top-0 z-50 border-b border-neutral-100">
         <motion.div
-          className="container mx-auto px-4 py-4 flex justify-between items-center"
+          className="container mx-auto px-4 py-3 flex justify-between items-center"
           initial="hidden"
           animate="visible"
           variants={headerVariants}
         >
           <div className="flex items-center">
             <div className="relative inline-flex items-center">
-              <img 
-                src="/favicon.svg" 
-                alt="Global Mantenimiento C.A." 
-                className="h-12 w-auto mr-3"
-                style={{ filter: 'drop-shadow(0 1px 2px rgba(0, 0, 0, 0.3))' }}
+              <img
+                src="/favicon.svg"
+                alt="Global Mantenimiento C.A. - Inicio"
+                className="h-10 w-auto mr-2 md:mr-3"
               />
-              <h1 className="text-xl md:text-2xl font-bold text-[#2374f2]" style={{ textShadow: '1px 1px 2px rgba(0, 0, 0, 0.3)' }}>Global Mantenimiento C.A.</h1>
+              <h1 className="text-lg md:text-xl font-bold text-primary-600">
+                Global Mantenimiento C.A.
+              </h1>
             </div>
           </div>
-          
-          <nav className="hidden md:flex space-x-8 items-center">
+
+          <nav className="hidden md:flex space-x-6 lg:space-x-8 items-center">
             {sections.map(section => (
-              <NavLink 
+              <NavLink
                 key={section.id}
                 href={`#${section.id}`}
                 label={section.label}
@@ -241,13 +257,12 @@ export default function Header({ translations }) {
           </nav>
 
           <div className="flex items-center gap-2 md:hidden">
-            <LanguageSwitcher />
-            <button 
+            <button
               onClick={() => setIsMobileMenuOpen(true)}
-              className="p-2 hover:bg-gray-100 rounded-lg"
-              aria-label="Abrir menú"
+              className="p-2 hover:bg-neutral-100 rounded-xl transition-colors min-h-[44px] min-w-[44px]"
+              aria-label="Abrir menú de navegación"
             >
-              <Icon name="menu" className="w-6 h-6 text-gray-800" />
+              <Icon name="menu" className="w-6 h-6 text-neutral-800" />
             </button>
           </div>
         </motion.div>

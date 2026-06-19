@@ -3,19 +3,19 @@ import { HiEye, HiPencil, HiTrash, HiThumbUp, HiThumbDown } from 'react-icons/hi
 const variants = {
   view: {
     icon: HiEye,
-    baseClass: 'text-gray-600 hover:text-blue-600 hover:bg-blue-50',
+    baseClass: 'text-neutral-600 hover:text-primary-600 hover:bg-primary-50',
   },
   edit: {
     icon: HiPencil,
-    baseClass: 'text-gray-600 hover:text-green-600 hover:bg-green-50',
+    baseClass: 'text-neutral-600 hover:text-emerald-600 hover:bg-emerald-50',
   },
   delete: {
     icon: HiTrash,
-    baseClass: 'text-gray-600 hover:text-red-600 hover:bg-red-50',
+    baseClass: 'text-neutral-600 hover:text-red-600 hover:bg-red-50',
   },
   approve: {
     icon: HiThumbUp,
-    baseClass: 'bg-green-600 text-white hover:bg-green-700',
+    baseClass: 'bg-emerald-600 text-white hover:bg-emerald-700',
   },
   reject: {
     icon: HiThumbDown,
@@ -23,18 +23,17 @@ const variants = {
   },
 }
 
-export default function ActionButton({ 
-  variant = 'view', 
-  onClick, 
+export default function ActionButton({
+  variant = 'view',
+  onClick,
   label,
   size = 18,
   className = '',
-  ...props 
+  ...props
 }) {
   const config = variants[variant] || variants.view
   const Icon = config.icon
 
-  // Map variants to aria-labels
   const ariaLabels = {
     view: 'Ver detalles',
     edit: 'Editar elemento',
@@ -46,7 +45,7 @@ export default function ActionButton({
   return (
     <button
       onClick={onClick}
-      className={`p-2 rounded-lg transition-colors ${config.baseClass} ${className}`}
+      className={`p-2 rounded-lg transition-colors min-h-[36px] min-w-[36px] ${config.baseClass} ${className}`}
       aria-label={ariaLabels[variant] || 'Acción'}
       {...props}
     >

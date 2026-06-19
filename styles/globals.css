@@ -2,18 +2,20 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Skip Link - Accessibility */
+/* ===== ACCESIBILIDAD ===== */
+/* Skip Link - Navegación por teclado */
 .skip-link {
   position: absolute;
-  top: -40px;
+  top: -100px;
   left: 0;
   background: #000;
   color: #fff;
-  padding: 8px 16px;
-  z-index: 100;
-  transition: top 0.3s;
+  padding: 12px 24px;
+  z-index: 9999;
+  transition: top 0.3s ease;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 700;
+  font-size: 1rem;
 }
 
 .skip-link:focus {
@@ -22,78 +24,77 @@
   outline-offset: 2px;
 }
 
-/* ===== Global Focus Styles ===== */
-/* Visible focus indicators for keyboard navigation - Accessibility */
+/* Focus visible global - Mejorada */
 *:focus-visible {
   outline: 3px solid #f59e0b;
-  outline-offset: 2px;
+  outline-offset: 3px;
+  border-radius: 4px;
 }
 
-/* Remove default focus for mouse users, keep for keyboard */
 *:focus:not(:focus-visible) {
   outline: none;
 }
 
-/* Specific focus styles for interactive elements */
-button:focus-visible,
-input:focus-visible,
-select:focus-visible,
-textarea:focus-visible,
-a:focus-visible {
-  outline: 3px solid #f59e0b;
-  outline-offset: 2px;
+/* ===== TIPOGRAFÍA ===== */
+/* Fuente base mejorada */
+body {
+  font-family: 'Segoe UI', 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+  font-feature-settings: "kern" 1, "liga" 1;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
-/* Links specifically */
-a {
-  transition: outline-color 0.2s ease;
+/* Mejorar legibilidad de párrafos */
+p {
+  line-height: 1.7;
+  letter-spacing: 0.01em;
 }
 
-/* Buttons specifically */
-button {
-  transition: outline-color 0.2s ease;
+/* ===== UTILIDADES ===== */
+/* Scroll suave */
+.smooth-scroll {
+  scroll-behavior: smooth;
+  scroll-padding-top: 5rem;
 }
 
-/* Tipografía base (la plantilla usaba Segoe UI) */
-body { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+/* Ajuste para anchors con header sticky */
+.scroll-offset {
+  scroll-margin-top: 5rem;
+}
 
-/* Carrusel: transición manejada por inline style en React, pero definimos la clase */
-.carousel-slide { transition: transform 0.5s ease-in-out; }
+/* Prevenir wrap en botones */
+button, a.inline-flex, .btn {
+  white-space: nowrap;
+}
 
-.service-card:hover { transform: translateY(-5px); }
-
-.smooth-scroll { scroll-behavior: smooth; }
-
-/* Ajuste para anchors debajo del header sticky */
-.scroll-offset { scroll-margin-top: 5rem; /* ~80px: ajusta según la altura del header */ }
-
-/* Prevent text wrapping inside buttons and button-like inline links */
-button, a.inline-flex, .btn { white-space: nowrap; }
-
-/* Reveal on scroll utility: elements start slightly translated and transparent,
-	 then animate to place when they become visible. Works well for sections,
-	 cards and images. */
+/* ===== ANIMACIONES ===== */
+/* Reveal on scroll */
 .reveal {
-	opacity: 0;
-	transform: translateY(20px);
-	transition: opacity 700ms cubic-bezier(.2,.9,.2,1), transform 700ms cubic-bezier(.2,.9,.2,1);
-	will-change: opacity, transform;
-}
-.reveal.is-visible {
-	opacity: 1;
-	transform: translateY(0);
+  opacity: 0;
+  transform: translateY(30px);
+  transition: opacity 0.8s cubic-bezier(0.2, 0.9, 0.2, 1),
+              transform 0.8s cubic-bezier(0.2, 0.9, 0.2, 1);
+  will-change: opacity, transform;
 }
 
-/* ===== prefers-reduced-motion ===== */
-/* Respect user preference for reduced motion */
+.reveal.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Carrusel */
+.carousel-slide {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* ===== PREFERS-REDUCED-MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
-  /* Disable smooth scrolling */
   .smooth-scroll,
   html {
     scroll-behavior: auto !important;
   }
 
-  /* Disable transitions and animations */
   *,
   *::before,
   *::after {
@@ -103,26 +104,48 @@ button, a.inline-flex, .btn { white-space: nowrap; }
     scroll-behavior: auto !important;
   }
 
-  /* Disable CSS animations for reveal */
   .reveal {
     opacity: 1 !important;
     transform: none !important;
     transition: none !important;
   }
 
-  /* Disable carousel slide transitions */
   .carousel-slide {
     transition: none !important;
   }
+}
 
-  /* Disable service card hover effects */
-  .service-card:hover {
-    transform: none !important;
+/* ===== MEJORAS VISUALES ===== */
+/* Sombras más suaves */
+.shadow-soft {
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+}
+
+.shadow-medium {
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+}
+
+/* Gradientes mejorados */
+.gradient-hero {
+  background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 50%, #3b82f6 100%);
+}
+
+/* ===== RESPONSIVE TYPOGRAPHY ===== */
+@media (max-width: 640px) {
+  html {
+    font-size: 16px;
   }
+}
 
-  /* Disable skip link transition */
-  .skip-link {
-    transition: none !important;
+@media (min-width: 768px) {
+  html {
+    font-size: 17px;
+  }
+}
+
+@media (min-width: 1024px) {
+  html {
+    font-size: 18px;
   }
 }
 

@@ -30,7 +30,6 @@
     "about": "About Us",
     "services": "Services",
     "works": "Works",
-    "testimonials": "Testimonials",
     "contact": "Contact"
   },
   "hero": {
@@ -64,22 +63,159 @@
     "subtitle": "Areas of expertise in industrial maintenance that we offer to our clients",
     "noResults": "No services available",
     "loading": "Loading...",
-    "error": "Error loading services"
+    "error": "Error loading services",
+    "carousel": {
+      "items": [
+        {
+          "id": 1,
+          "title": "Inspection and fault detection",
+          "description": "Early identification of faults to prevent unplanned downtime.",
+          "img": "/services/Inspección y detección de fallas.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Industrial asset management",
+          "description": "Comprehensive asset administration to maximize useful life and performance.",
+          "img": "/services/Gestión de activos industriales.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Mechanical equipment repair",
+          "description": "Corrective maintenance of pumps, conveyors, valves, and pneumatic and oil-hydraulic systems.",
+          "img": "/services/reparacion_de_equipos_mecanicos.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Tank repair",
+          "description": "Specialized repair and maintenance services for industrial tanks.",
+          "img": "/services/reparacion de tanques.jpg"
+        },
+        {
+          "id": 5,
+          "title": "Low voltage electrical installation and service connection for production lines",
+          "description": "Design and installation of low voltage electrical networks for production lines.",
+          "img": "/services/mantenimientoElectrico.jpg"
+        },
+        {
+          "id": 6,
+          "title": "Design, manufacture and supply of MCCs, control panels and field installation",
+          "description": "Motor control centers, control panels and on-site commissioning.",
+          "img": "/services/diseño fabricacion ccm panel de control.jpg"
+        },
+        {
+          "id": 7,
+          "title": "Industrial process automation with PLC",
+          "description": "Automation solutions with programmable logic controllers to optimize operations.",
+          "img": "/services/automatización.jpg"
+        },
+        {
+          "id": 8,
+          "title": "Production line optimization",
+          "description": "Continuous improvement of production processes to increase efficiency and reduce waste.",
+          "img": "/services/optimizacion de lineas de produccion.jpg"
+        },
+        {
+          "id": 9,
+          "title": "Planning, control and monitoring of projects and major plant shutdowns",
+          "description": "Comprehensive management of projects and scheduled shutdowns to minimize downtime.",
+          "img": "/services/planificacion control y seguimiento de proyectos.jpg"
+        },
+        {
+          "id": 10,
+          "title": "Quality courses in maintenance management",
+          "description": "Specialized training in best practices and quality management of maintenance.",
+          "img": "/services/cursos de calidad en gestion de mantenimiento.jpg"
+        },
+        {
+          "id": 11,
+          "title": "Basic courses in boiler maintenance and operation",
+          "description": "Fundamental training in boiler system operation and maintenance.",
+          "img": "/services/mantenimientoCalderas.jpg"
+        },
+        {
+          "id": 12,
+          "title": "Boiler Maintenance according to COVENIN Standards",
+          "description": "Boiler maintenance service complying with current COVENIN regulations.",
+          "img": "/services/mantenimiento de calderas segun normas covenin.jpg"
+        }
+      ]
+    },
+    "items": {
+      "mecanico": {
+        "title": "Preventive and Corrective Mechanical Maintenance",
+        "items": [
+          "Inspection and fault detection.",
+          "Repair of mechanical equipment: pumps, conveyors, valves, pneumatic systems, oil-hydraulic systems, cappers, packers, and others.",
+          "Replacement of bearings and seals.",
+          "Tank repair."
+        ]
+      },
+      "electrico": {
+        "title": "Preventive and Corrective Electrical and Instrumentation Maintenance",
+        "items": [
+          "Installation of low voltage electrical service for production lines.",
+          "Design, manufacture and supply of MCCs, control panels and field installation.",
+          "Automation of industrial processes with PLC.",
+          "Production line optimization."
+        ]
+      },
+      "calderas": {
+        "title": "Boiler Maintenance according to COVENIN Standards",
+        "items": [
+          "Planning, control and monitoring of projects and major plant shutdowns.",
+          "Quality courses in maintenance management.",
+          "Basic courses in boiler maintenance and operation."
+        ]
+      }
+    }
   },
   "works": {
-    "title": "Projects Completed",
-    "subtitle": "Projects carried out for different companies in the industrial sector",
+    "title": "Some completed works",
+    "subtitle": "Global Mantenimiento C.A. has executed various works for companies in the industrial sector",
     "viewProject": "View Project",
     "noProjects": "No projects available",
     "yearsExperience": "Years of Experience",
     "projectsCompleted": "Projects Completed",
     "satisfiedClients": "Satisfied Clients",
-    "technicalSupport": "Technical Support"
-  },
-  "testimonials": {
-    "title": "What our clients say",
-    "subtitle": "With more than 500 successful projects, these are testimonials from some of our satisfied clients",
-    "noTestimonials": "No testimonials available"
+    "technicalSupport": "Technical Support",
+    "servicesPerformed": "Services performed:",
+    "clients": "Featured clients:",
+    "projects": {
+      "mantenimiento": {
+        "title": "Industrial Maintenance",
+        "description": "Repair and preventive and corrective maintenance of mechanical and electrical equipment.",
+        "details": "Comprehensive maintenance services to ensure operational continuity."
+      },
+      "calderas": {
+        "title": "Boiler Maintenance",
+        "description": "Maintenance and certification of boilers according to COVENIN standards.",
+        "details": "Planning and execution of major plant shutdowns."
+      },
+      "filtros": {
+        "title": "Filter Maintenance",
+        "description": "Maintenance of bag filters, conveyors, and fillers.",
+        "details": "Optimization of filtration and conveying systems."
+      },
+      "plc": {
+        "title": "PLC Programming",
+        "description": "Programming and automation of industrial processes with PLC.",
+        "details": "Design and implementation of automated control systems."
+      },
+      "soluciones": {
+        "title": "Technical Solutions",
+        "description": "Technical solutions for specialized maintenance.",
+        "details": "Advisory and execution of custom projects."
+      }
+    },
+    "clientsList": [
+      "Fundición del Centro, C.A.",
+      "DH Vital, C.A.",
+      "Mamusa Industrial, C.A.",
+      "Instalaciones Mecánicas JLC, C.A.",
+      "Gleason, C.A.",
+      "Windoor House, C.A.",
+      "Embotelladora El Samán"
+    ]
   },
   "contact": {
     "title": "Contact Us",

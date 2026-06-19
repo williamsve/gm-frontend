@@ -14,8 +14,6 @@ yarn-error.log*
 pnpm-debug.log*
 
 # Environment variables
-# .env.production se excluye para no exponer secrets en el repositorio
-# Las variables de entorno se configuran directamente en el panel de DonWeb
 .env
 .env.local
 .env.development.local
@@ -41,48 +39,7 @@ out/
 Thumbs.db
 
 # =====================
-# Backend (Python/FastAPI)
-# =====================
-api/.env
-api/__pycache__/
-api/*.pyc
-api/*.pyo
-api/.venv/
-api/venv/
-api/env/
-.venv/
-venv/
-env/
-
-# Base de datos local
-*.db
-*.sqlite
-*.sqlite3
-
-# Archivos de Python
-*.egg-info/
-dist/
-build/
-*.egg
-
-# pytest
-.pytest_cache/
-.coverage
-htmlcov/
-
-# Secretos y keys
-secrets.json
-credentials.json
-*.pem
-*.key
-
-# Uploads locales (no subirlos, Railway no los necesita)
-api/public/uploads/
-!api/public/uploads/.gitkeep
-
-# =====================
 # Generales
 # =====================
 *.log
-api/
 .next/

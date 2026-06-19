@@ -4,26 +4,20 @@ const sectionNames = {
   dashboard: 'Dashboard',
   trabajos: 'Trabajos',
   servicios: 'Servicios',
-  testimonios: 'Testimonios',
   proyectos: 'Proyectos',
   configuracion: 'Configuración',
   estadisticas: 'Estadísticas'
 }
 
-export default function Breadcrumbs({ activeSection = 'dashboard' }) {
+export default function Breadcrumbs({ activeSection = 'dashboard', homeUrl = '/' }) {
   const currentSection = sectionNames[activeSection] || 'Dashboard'
 
   return (
     <nav className="flex items-center gap-2 text-sm text-gray-600 mb-4 px-4">
       {/* Inicio / Dashboard - Always clickable */}
       <Link 
-        href="#" 
+        href={homeUrl}
         className="hover:text-blue-600 transition-colors font-medium"
-        onClick={(e) => {
-          e.preventDefault()
-          // Navigate to dashboard - handled by parent component
-          window.dispatchEvent(new CustomEvent('adminNavigate', { detail: 'dashboard' }))
-        }}
       >
         Inicio
       </Link>

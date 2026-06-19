@@ -4,19 +4,20 @@ import Footer from '../components/Footer'
 import Hero from '../components/Hero'
 import Services from '../components/Services'
 import Works from '../components/Works'
-import Testimonials from '../components/Testimonials'
 import ContactCTA from '../components/ContactCTA'
 import Icon from '../components/Icon'
-import quienesImg from '../public/i (4).jpeg'
-import img5 from '../public/i (5).jpeg'
-import img1 from '../public/i (1).jpeg'
-import img2 from '../public/i (2).jpeg'
-import img3 from '../public/i (3).jpeg'
+import CTAButton from '../components/ui/CTAButton'
+import quienesImg from '../public/i-4.jpeg'
+import img5 from '../public/i-5.jpeg'
+import img1 from '../public/i-1.jpeg'
+import img2 from '../public/i-2.jpeg'
+import img3 from '../public/i-3.jpeg'
 import Image from 'next/image'
 import Revealer from '../components/Revealer'
 import useInView from '../lib/useInView'
 import { motion } from 'framer-motion'
 import { useTranslation } from '../lib/i18n'
+import { DEFAULT_WHATSAPP_NUMBER, formatWhatsAppUrl } from '../lib/whatsapp'
 
 // Extended translations for "Quiénes Somos" section in all languages
 const quienesTranslations = {
@@ -157,7 +158,7 @@ export default function Home() {
         <Header translations={translations} />
         <Hero />
 
-      <section id="quienes-somos" className="scroll-mt-16 py-8 md:py-12 bg-white">
+        <section id="quienes-somos" className="scroll-mt-0 py-16 md:py-24 bg-white">
           <div className="container mx-auto px-4">
             <motion.h2 
               initial={{ y: 20, opacity: 0 }}
@@ -279,9 +280,8 @@ export default function Home() {
 
         <Services />
         <Works />
-        <Testimonials />
-        
-        <section id="contacto" className="scroll-mt-16 py-12 md:py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
+
+        <section id="contacto" className="scroll-mt-0 py-12 md:py-20 bg-gradient-to-r from-blue-900 to-blue-700 text-white">
           <div className="container mx-auto px-4">
             <motion.h2 
               initial={{ y: 20, opacity: 0 }}
@@ -292,22 +292,43 @@ export default function Home() {
             >
               {contact.title}
             </motion.h2>
-            <div className="flex flex-col lg:flex-row justify-between items-center">
-              <div className="lg:w-2/5 mb-10 lg:mb-0">
-                <h3 className="text-2xl font-bold mb-6">Global Mantenimiento C.A.</h3>
-                <p className="mb-8 text-blue-100">
+            <div className="flex flex-col lg:flex-row justify-between items-center gap-8">
+              <div className="lg:w-2/5">
+                <h3 className="text-2xl md:text-3xl font-bold mb-4 text-white">Global Mantenimiento C.A.</h3>
+                <p className="mb-8 text-blue-100 text-lg leading-relaxed">
                   {contact.description}
                 </p>
-                <div className="space-y-5">
+                <div className="space-y-4">
                   <div className="flex items-center">
-                    <div className="bg-white/20 p-3 rounded-lg mr-4">
+                    <div className="bg-white/20 p-3 rounded-lg mr-4 min-h-[48px] min-w-[48px] flex items-center justify-center">
                       <Icon name="phone" className="text-xl" aria-hidden="true" />
                     </div>
                     <div>
-                      <p className="font-medium">{contact.phone}</p>
-                      <p className="text-blue-100">+58 4242618663</p>
+                      <p className="font-semibold text-white">{contact.phone}</p>
+                      <p className="text-blue-200">{DEFAULT_WHATSAPP_NUMBER}</p>
                     </div>
                   </div>
+                  <div className="flex items-center">
+                    <div className="bg-white/20 p-3 rounded-lg mr-4 min-h-[48px] min-w-[48px] flex items-center justify-center">
+                      <Icon name="email" className="text-xl" aria-hidden="true" />
+                    </div>
+                    <div>
+                      <p className="font-semibold text-white">Email</p>
+                      <p className="text-blue-200">info@globalmantenimiento.site</p>
+                    </div>
+                  </div>
+                </div>
+                <div className="mt-8">
+                  <CTAButton
+                    href={formatWhatsAppUrl(DEFAULT_WHATSAPP_NUMBER, 'Hola, estoy interesado en sus servicios.')}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    variant="primary"
+                    className="w-full sm:w-auto"
+                  >
+                    <Icon name="whatsapp" />
+                    Contactar ahora
+                  </CTAButton>
                 </div>
               </div>
               <ContactCTA />

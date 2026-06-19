@@ -2,13 +2,14 @@ import { motion, useReducedMotion } from 'framer-motion'
 import React, { useState, useRef, useEffect, useCallback } from 'react'
 import Image from 'next/image'
 import Icon from './Icon'
+import CTAButton from './ui/CTAButton'
 import ScrollIndicator from './ScrollIndicator'
 import useParallax from '../lib/useParallax'
 import { useTranslation } from '../lib/i18n'
-import img1 from '../public/i (1).jpeg'
-import img2 from '../public/i (2).jpeg'
-import img3 from '../public/i (3).jpeg'
-import img4 from '../public/i (4).jpeg'
+import img1 from '../public/services/reparacion_de_equipos_mecanicos.jpg'
+import img2 from '../public/services/mantenimientoElectrico.jpg'
+import img3 from '../public/services/mantenimiento de calderas segun normas covenin.jpg'
+import img4 from '../public/services/automatización.jpg'
 
 export default function Hero({ autoPlay = true, autoPlayInterval = 5000 }) {
   const { t } = useTranslation()
@@ -27,26 +28,26 @@ export default function Hero({ autoPlay = true, autoPlayInterval = 5000 }) {
   const slides = [
     {
       key: 'mecanico',
-      title: t('mecanico.title', 'Mantenimiento Mecánico'),
-      desc: t('mecanico.desc'),
+      title: 'Reparación de equipos mecánicos',
+      desc: 'Mantenimiento correctivo de bombas, transportadores, válvulas y sistemas neumáticos y oleohidráulicos.',
       img: img1
     },
     {
       key: 'electrico',
-      title: t('electrico.title', 'Mantenimiento Eléctrico'),
-      desc: t('electrico.desc'),
+      title: 'Instalación y acometida eléctrica de baja tensión',
+      desc: 'Diseño e instalación de redes eléctricas de baja tensión para líneas de producción.',
       img: img2
     },
     {
       key: 'calderas',
-      title: t('calderas.title', 'Mantenimiento de Calderas'),
-      desc: t('calderas.desc'),
+      title: 'Mantenimiento de Calderas según Normas COVENIN',
+      desc: 'Servicio de mantenimiento de calderas cumpliendo con las normativas COVENIN vigentes.',
       img: img3
     },
     {
       key: 'instrumentacion',
-      title: t('instrumentacion.title', 'Instrumentación y Control'),
-      desc: t('instrumentacion.desc'),
+      title: 'Automatización de procesos industriales con PLC',
+      desc: 'Soluciones de automatización con controladores lógicos programables para optimizar operaciones.',
       img: img4
     }
   ]
@@ -161,7 +162,7 @@ export default function Hero({ autoPlay = true, autoPlayInterval = 5000 }) {
         <div className="container mx-auto px-4">
           <div className="flex flex-col lg:flex-row items-center">
             <div className="lg:w-1/2 mb-10 lg:mb-0">
-              <h1 className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+              <h1 className="text-3xl md:text-4xl lg:text-4xl font-bold mb-4">
                 {t('hero.title', 'Global Mantenimiento C.A.')}
               </h1>
               <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
@@ -185,18 +186,20 @@ export default function Hero({ autoPlay = true, autoPlayInterval = 5000 }) {
       <div className="container mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center">
           <div className="lg:w-1/2 mb-10 lg:mb-0">
-            <motion.h1 initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: shouldReduceMotion ? 0 : 0.6 }} style={{ transform: `translate3d(0, ${titleOffset}px, 0)` }} className="text-3xl md:text-4xl lg:text-5xl font-bold mb-4">
+            <motion.h1 initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: shouldReduceMotion ? 0 : 0.6 }} style={{ transform: `translate3d(0, ${titleOffset}px, 0)` }} className="text-3xl md:text-4xl lg:text-4xl font-bold mb-4">
               {t('hero.title', 'Global Mantenimiento C.A.')}
             </motion.h1>
             <motion.h2 initial={{ y: 20, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: shouldReduceMotion ? 0 : 0.6, delay: shouldReduceMotion ? 0 : 0.1 }} style={{ transform: `translate3d(0, ${titleOffset}px, 0)` }} className="text-2xl md:text-3xl lg:text-4xl font-bold mb-4">
               {t('hero.subtitle', 'Especialistas en')} <span className="text-yellow-300">{t('hero.highlight', 'Mantenimiento Industrial')}</span>
             </motion.h2>
             <motion.p initial={{ y: 10, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ delay: shouldReduceMotion ? 0 : 0.1, duration: shouldReduceMotion ? 0 : 0.5 }} className="text-xl mb-6 text-blue-100">{t('hero.description', 'Comprometidos con la calidad, los plazos establecidos y los precios justos.')}</motion.p>
-            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: shouldReduceMotion ? 0 : 0.2 }} className="flex flex-col sm:flex-row gap-3 sm:space-x-4 sm:gap-0">
-              <a href="#contacto" className="bg-yellow-500 text-blue-900 font-bold px-6 py-3 rounded-md hover:bg-yellow-400 transition text-center">
+            <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: shouldReduceMotion ? 0 : 0.2 }} className="flex flex-col sm:flex-row gap-4 sm:space-x-4">
+              <CTAButton href="#contacto" variant="primary" className="w-full sm:w-auto">
                 {t('hero.cta', 'Habla con nosotros')}
-              </a>
-              <a href="#servicios" className="border-2 border-white text-white font-bold px-6 py-3 rounded-md hover:bg-white hover:text-blue-900 transition text-center">{t('hero.ctaSecondary', 'Ver Servicios')}</a>
+              </CTAButton>
+              <CTAButton href="#servicios" variant="secondary" className="w-full sm:w-auto">
+                {t('hero.ctaSecondary', 'Ver Servicios')}
+              </CTAButton>
             </motion.div>
           </div>
 
@@ -225,10 +228,10 @@ export default function Hero({ autoPlay = true, autoPlayInterval = 5000 }) {
                           placeholder="blur"
                           priority={idx === 1}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/80 via-black/40 to-transparent flex flex-col justify-end p-3 md:p-4">
+                        <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/60 to-transparent flex flex-col justify-end p-4 md:p-6">
                           <div className="flex flex-col items-center text-center">
-                            <h4 className="text-base md:text-lg font-bold text-white mb-1 md:mb-2">{s.title}</h4>
-                            <p className="text-white/90 text-xs md:text-sm line-clamp-2">{s.desc}</p>
+                            <h4 className="text-base md:text-lg font-bold text-white mb-1 md:mb-2 drop-shadow-lg">{s.title}</h4>
+                            <p className="text-white/95 text-xs md:text-sm line-clamp-2 drop-shadow">{s.desc}</p>
                           </div>
                         </div>
                       </div>
@@ -236,25 +239,25 @@ export default function Hero({ autoPlay = true, autoPlayInterval = 5000 }) {
                   ))}
                 </div>
 
-                <button 
-                  onClick={prev} 
+                <button
+                  onClick={prev}
                   onKeyDown={(e) => handleKeyDown(e, 'prev')}
                   tabIndex={0}
                   role="button"
                   aria-label={t('common.previous', 'Anterior')}
-                  className="absolute left-1 sm:left-2 top-1/2 -translate-y-1/2 bg-white/90 text-gray-800 p-1.5 sm:p-2 rounded-full shadow-lg hover:bg-white z-10 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  className="absolute left-2 sm:left-4 top-1/2 -translate-y-1/2 bg-white/95 text-gray-800 p-3 sm:p-4 rounded-full shadow-lg hover:bg-white z-10 focus:outline-none focus:ring-2 focus:ring-yellow-400 min-h-[44px] min-w-[44px]"
                 >
-                  <Icon name="chevronLeft" className="text-lg sm:text-xl" />
+                  <Icon name="chevronLeft" className="text-xl sm:text-2xl" />
                 </button>
-                <button 
-                  onClick={next} 
+                <button
+                  onClick={next}
                   onKeyDown={(e) => handleKeyDown(e, 'next')}
                   tabIndex={0}
                   role="button"
                   aria-label={t('common.next', 'Siguiente')}
-                  className="absolute right-1 sm:right-2 top-1/2 -translate-y-1/2 bg-white/90 text-gray-800 p-1.5 sm:p-2 rounded-full shadow-lg hover:bg-white z-10 focus:outline-none focus:ring-2 focus:ring-yellow-400"
+                  className="absolute right-2 sm:right-4 top-1/2 -translate-y-1/2 bg-white/95 text-gray-800 p-3 sm:p-4 rounded-full shadow-lg hover:bg-white z-10 focus:outline-none focus:ring-2 focus:ring-yellow-400 min-h-[44px] min-w-[44px]"
                 >
-                  <Icon name="chevronRight" className="text-lg sm:text-xl" />
+                  <Icon name="chevronRight" className="text-xl sm:text-2xl" />
                 </button>
 
                 <div className="flex justify-center mt-4 space-x-2" role="tablist" aria-label="Navegación de slides">
@@ -278,3 +281,30 @@ export default function Hero({ autoPlay = true, autoPlayInterval = 5000 }) {
     </section>
   )
 }
+
+
+/*
+quiero rediseñar la sección de servicios. en lugar de mostrar cards con descripción, quiero mostrar una imagen por cada servicio, para lo cual deberás diseñar un carousel de imagenes teniendo en cuenta las siguientes directrices:
+
+reusabilidad
+simpleza
+estilo moderno
+minimalista
+
+
+texto de cada imagen (segun cada servicio):
+
+1 Inspección y detección de fallas
+2 Gestión de activos industriales
+3 Reparación de equipos mecánicos
+4 Reparación de tanques
+5 Instalación y acometida eléctrica de baja tensión para líneas de producción.
+6 Diseño, fabricación y suministro de CCM, paneles de control e instalación en campo.
+7 Automatización de procesos industriales con PLC.
+8Optimización de líneas de producción.
+9Planificación, control y seguimiento de proyectos y paradas mayores de planta.
+10 Cursos de calidad en gestión de mantenimiento.
+11 Cursos básicos de mantenimiento y operaciones de calderas.
+12 Mantenimiento de Calderas según Normas COVENIN
+
+*/

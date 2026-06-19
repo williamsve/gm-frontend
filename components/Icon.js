@@ -22,7 +22,9 @@ import {
   MdEdit,
   MdDelete,
   MdSave,
-  MdHome
+  MdHome,
+  MdDownload,
+  MdInfo
 } from 'react-icons/md'
 import { FaWhatsapp } from 'react-icons/fa'
 
@@ -50,7 +52,9 @@ const ICONS = {
   edit: MdEdit,
   delete: MdDelete,
   save: MdSave,
-  home: MdHome
+  home: MdHome,
+  download: MdDownload,
+  info: MdInfo
 }
 
 export default function Icon({ name, className = '', size, ...props }) {

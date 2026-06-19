@@ -1,6 +1,6 @@
 # Componentes UI Reutilizables
 
-Este directorio contiene componentes de UI reutilizables diseñados para reducir la redundancia en el código del panel de administración.
+Este directorio contiene componentes de UI reutilizables diseñados para reducir la redundancia en el código de la aplicación.
 
 ## Componentes Disponibles
 
@@ -172,7 +172,7 @@ import { ServiceCard } from '../ui'
 - `onView`, `onEdit`, `onDelete`: Funciones de callback para acciones
 
 ### 9. TestimonialAdminCard
-Tarjeta para mostrar testimonios en el panel de admin con acciones de aprobación/rechazo.
+Tarjeta para mostrar testimonios con acciones de aprobación/rechazo.
 
 ```jsx
 import { TestimonialAdminCard } from '../ui'

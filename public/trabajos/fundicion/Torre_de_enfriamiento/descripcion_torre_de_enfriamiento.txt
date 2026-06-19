@@ -1,0 +1,4 @@
+Empresa: Fundición del centro C.A
+trabajo: Restauración a torre de enfriamiento de agua
+
+descripción: Restauración completa a la torre de enfriamiento, mantenimiento correctivo electrico y mecánico al motor de la misma y fabricación de base para fijar el motor a la torre. De igual manera se instaló la torre ya restaurada quedando en funcionamiento al 100%

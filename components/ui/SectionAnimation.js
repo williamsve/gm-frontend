@@ -1,9 +1,9 @@
 import { motion } from 'framer-motion'
 
 /**
- * Componente reutilizable de animación para las secciones del panel de administración
+ * Componente reutilizable de animación para las secciones
  * Proporciona animaciones de entrada y salida suaves
- * 
+ *
  * @param {React.ReactNode} children - Contenido a envolver
  * @param {number} delay - Retraso en segundos para el inicio de la animación
  * @param {string} className - Clases CSS adicionales

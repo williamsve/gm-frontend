@@ -20,7 +20,6 @@ export default function Footer() {
     { key: 'nav.about', href: '#quienes-somos' },
     { key: 'nav.services', href: '#servicios' },
     { key: 'nav.works', href: '#trabajos' },
-    { key: 'testimonials.title', href: '#testimonios' },
     { key: 'nav.contact', href: '#contacto' }
   ]
 
@@ -36,14 +35,14 @@ export default function Footer() {
         >
           <motion.div variants={itemVariants} className="mb-6 md:mb-0">
             <div className="flex items-center mb-4">
-              <img 
-                src="/favicon.svg" 
-                alt="Global Mantenimiento" 
+              <img
+                src="/favicon.svg"
+                alt="Global Mantenimiento C.A. - Inicio"
                 className="w-16 h-16 object-contain mr-3"
               />
-              <h3 className="text-xl font-bold">{t('footer.companyName', 'Global Mantenimiento C.A.')}</h3>
+              <h3 className="text-xl font-bold text-white">{t('footer.companyName', 'Global Mantenimiento C.A.')}</h3>
             </div>
-            <p className="text-gray-500 max-w-md">{t('footer.companyDescription', 'Especialistas en servicios de mantenimiento industrial y ejecución de proyectos, comprometidos con la calidad, los plazos establecidos y los precios justos.')}</p>
+            <p className="text-neutral-400 max-w-md leading-relaxed">{t('footer.companyDescription', 'Especialistas en servicios de mantenimiento industrial y ejecución de proyectos, comprometidos con la calidad, los plazos establecidos y los precios justos.')}</p>
           </motion.div>
 
           <motion.div variants={itemVariants}>
@@ -51,7 +50,11 @@ export default function Footer() {
             <ul className="space-y-2">
               {quickLinks.map((link) => (
                 <li key={link.key}>
-                  <a href={link.href} className="text-gray-500 hover:text-white">
+                  <a
+                    href={link.href}
+                    className="text-neutral-400 hover:text-white transition-colors"
+                    aria-label={`Ir a sección: ${t(link.key)}`}
+                  >
                     {t(link.key)}
                   </a>
                 </li>

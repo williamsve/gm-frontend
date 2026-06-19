@@ -1,55 +1,54 @@
 import { HiCheck, HiX, HiClock } from 'react-icons/hi'
 
 const statusConfig = {
-  // Estados de testimonios
-  pendiente: { 
-    bg: 'bg-yellow-100', 
-    text: 'text-yellow-800', 
-    icon: HiClock, 
-    label: 'Pendiente' 
+  pendiente: {
+    bg: 'bg-amber-100',
+    text: 'text-amber-800',
+    icon: HiClock,
+    label: 'Pendiente'
   },
-  aprobado: { 
-    bg: 'bg-green-100', 
-    text: 'text-green-800', 
-    icon: HiCheck, 
-    label: 'Aprobado' 
+  aprobado: {
+    bg: 'bg-emerald-100',
+    text: 'text-emerald-800',
+    icon: HiCheck,
+    label: 'Aprobado'
   },
-  rechazado: { 
-    bg: 'bg-red-100', 
-    text: 'text-red-800', 
-    icon: HiX, 
-    label: 'Rechazado' 
+  rechazado: {
+    bg: 'bg-red-100',
+    text: 'text-red-800',
+    icon: HiX,
+    label: 'Rechazado'
   },
-  
+
   // Estados de trabajos
-  completado: { 
-    bg: 'bg-green-100', 
-    text: 'text-green-800', 
-    icon: HiCheck, 
-    label: 'Completado' 
+  completado: {
+    bg: 'bg-emerald-100',
+    text: 'text-emerald-800',
+    icon: HiCheck,
+    label: 'Completado'
   },
-  en_progreso: { 
-    bg: 'bg-blue-100', 
-    text: 'text-blue-800', 
-    icon: HiClock, 
-    label: 'En Progreso' 
+  en_progreso: {
+    bg: 'bg-primary-100',
+    text: 'text-primary-800',
+    icon: HiClock,
+    label: 'En Progreso'
   },
-  
+
   // Categorías de servicios
-  desarrollo: { 
-    bg: 'bg-blue-100', 
-    text: 'text-blue-800', 
-    label: 'Desarrollo' 
+  desarrollo: {
+    bg: 'bg-primary-100',
+    text: 'text-primary-800',
+    label: 'Desarrollo'
   },
-  diseno: { 
-    bg: 'bg-purple-100', 
-    text: 'text-purple-800', 
-    label: 'Diseño' 
+  diseno: {
+    bg: 'bg-violet-100',
+    text: 'text-violet-800',
+    label: 'Diseño'
   },
-  consultoria: { 
-    bg: 'bg-orange-100', 
-    text: 'text-orange-800', 
-    label: 'Consultoría' 
+  consultoria: {
+    bg: 'bg-orange-100',
+    text: 'text-orange-800',
+    label: 'Consultoría'
   },
 }
 

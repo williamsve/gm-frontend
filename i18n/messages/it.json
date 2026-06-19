@@ -30,7 +30,6 @@
     "about": "Chi Siamo",
     "services": "Servizi",
     "works": "Lavori",
-    "testimonials": "Testimonianze",
     "contact": "Contatti"
   },
   "hero": {
@@ -64,22 +63,159 @@
     "subtitle": "Aree di competenza in manutenzione industriale che offriamo ai nostri clienti",
     "noResults": "Nessun servizio disponibile",
     "loading": "Caricamento...",
-    "error": "Errore nel caricamento dei servizi"
+    "error": "Errore nel caricamento dei servizi",
+    "carousel": {
+      "items": [
+        {
+          "id": 1,
+          "title": "Ispezione e rilevamento guasti",
+          "description": "Identificazione precoce dei guasti per prevenire fermate non pianificate.",
+          "img": "/services/Inspección y detección de fallas.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Gestione di asset industriali",
+          "description": "Amministrazione completa degli asset per massimizzarne la vita utile e le prestazioni.",
+          "img": "/services/Gestión de activos industriales.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Riparazione di attrezzature meccaniche",
+          "description": "Manutenzione correttiva di pompe, trasportatori, valvole e sistemi pneumatici e oleoidraulici.",
+          "img": "/services/reparacion_de_equipos_mecanicos.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Riparazione di serbatoi",
+          "description": "Servizi specializzati di riparazione e manutenzione di serbatoi industriali.",
+          "img": "/services/reparacion de tanques.jpg"
+        },
+        {
+          "id": 5,
+          "title": "Installazione e allacciamento elettrico a bassa tensione per linee di produzione",
+          "description": "Progettazione e installazione di reti elettriche a bassa tensione per linee di produzione.",
+          "img": "/services/mantenimientoElectrico.jpg"
+        },
+        {
+          "id": 6,
+          "title": "Progettazione, fabbricazione e fornitura di MCC, pannelli di controllo e installazione in campo",
+          "description": "Centri di controllo motori, pannelli di controllo e messa in servizio in sito.",
+          "img": "/services/diseño fabricacion ccm panel de control.jpg"
+        },
+        {
+          "id": 7,
+          "title": "Automazione dei processi industriali con PLC",
+          "description": "Soluzioni di automazione con controllori logici programmabili per ottimizzare le operazioni.",
+          "img": "/services/automatización.jpg"
+        },
+        {
+          "id": 8,
+          "title": "Ottimizzazione delle linee di produzione",
+          "description": "Miglioramento continuo dei processi produttivi per aumentare l'efficienza e ridurre gli sprechi.",
+          "img": "/services/optimizacion de lineas de produccion.jpg"
+        },
+        {
+          "id": 9,
+          "title": "Pianificazione, controllo e monitoraggio di progetti e fermate maggiori dell'impianto",
+          "description": "Gestione completa di progetti e fermate programmate per minimizzare i tempi di inattività.",
+          "img": "/services/planificacion control y seguimiento de proyectos.jpg"
+        },
+        {
+          "id": 10,
+          "title": "Corsi di qualità nella gestione della manutenzione",
+          "description": "Formazione specializzata nelle buone pratiche e nella gestione della qualità della manutenzione.",
+          "img": "/services/cursos de calidad en gestion de mantenimiento.jpg"
+        },
+        {
+          "id": 11,
+          "title": "Corsi base di manutenzione e operazione di caldaie",
+          "description": "Formazione fondamentale sull'operazione e la manutenzione di sistemi di caldaie.",
+          "img": "/services/mantenimientoCalderas.jpg"
+        },
+        {
+          "id": 12,
+          "title": "Manutenzione di Caldaie secondo le Norme COVENIN",
+          "description": "Servizio di manutenzione di caldaie conforme alle normative COVENIN vigenti.",
+          "img": "/services/mantenimiento de calderas segun normas covenin.jpg"
+        }
+      ]
+    },
+    "items": {
+      "mecanico": {
+        "title": "Manutenzione Meccanica Preventiva e Correttiva",
+        "items": [
+          "Ispezione e rilevamento guasti.",
+          "Riparazione di attrezzature meccaniche: pompe, trasportatori, valvole, sistemi pneumatici, sistemi oleoidraulici, tappatrici, imbottigliatrici e altri.",
+          "Sostituzione di cuscinetti e guarnizioni.",
+          "Riparazione di serbatoi."
+        ]
+      },
+      "electrico": {
+        "title": "Manutenzione Elettrica e di Strumentazione Preventiva e Correttiva",
+        "items": [
+          "Installazione elettrica a bassa tensione per linee di produzione.",
+          "Progettazione, fabbricazione e fornitura di MCC, pannelli di controllo e installazione in campo.",
+          "Automazione dei processi industriali con PLC.",
+          "Ottimizzazione delle linee di produzione."
+        ]
+      },
+      "calderas": {
+        "title": "Manutenzione di Caldaie secondo le Norme COVENIN",
+        "items": [
+          "Pianificazione, controllo e monitoraggio di progetti e fermate maggiori dell'impianto.",
+          "Corsi di qualità nella gestione della manutenzione.",
+          "Corsi base di manutenzione e operazione di caldaie."
+        ]
+      }
+    }
   },
   "works": {
-    "title": "Progetti Realizzati",
-    "subtitle": "Progetti realizzati per diverse aziende del settore industriale",
+    "title": "Alcuni lavori realizzati",
+    "subtitle": "Global Mantenimiento C.A. ha eseguito diversi lavori per aziende del settore industriale",
     "viewProject": "Vedi Progetto",
     "noProjects": "Nessun progetto disponibile",
     "yearsExperience": "Anni di Esperienza",
     "projectsCompleted": "Progetti Completati",
     "satisfiedClients": "Clienti Soddisfatti",
-    "technicalSupport": "Supporto Tecnico"
-  },
-  "testimonials": {
-    "title": "Cosa dicono i nostri clienti",
-    "subtitle": "Con più di 500 progetti riusciti, queste sono le testimonianze di alcuni dei nostri clienti soddisfatti",
-    "noTestimonials": "Nessuna testimonianza disponibile"
+    "technicalSupport": "Supporto Tecnico",
+    "servicesPerformed": "Servizi svolti:",
+    "clients": "Clienti in evidenza:",
+    "projects": {
+      "mantenimiento": {
+        "title": "Manutenzione Industriale",
+        "description": "Riparazione e manutenzione preventiva e correttiva di attrezzature meccaniche ed elettriche.",
+        "details": "Servizi di manutenzione completi per garantire la continuità operativa."
+      },
+      "calderas": {
+        "title": "Manutenzione Caldaie",
+        "description": "Manutenzione e certificazione di caldaie secondo le norme COVENIN.",
+        "details": "Pianificazione ed esecuzione di fermate maggiori dell'impianto."
+      },
+      "filtros": {
+        "title": "Manutenzione Filtri",
+        "description": "Manutenzione di filtri a maniche, trasportatori e riempitrici.",
+        "details": "Ottimizzazione dei sistemi di filtrazione e trasporto."
+      },
+      "plc": {
+        "title": "Programmazione PLC",
+        "description": "Programmazione e automazione dei processi industriali con PLC.",
+        "details": "Progettazione e implementazione di sistemi di controllo automatizzati."
+      },
+      "soluciones": {
+        "title": "Soluzioni Tecniche",
+        "description": "Soluzioni tecniche per manutenzione specializzata.",
+        "details": "Consulenza ed esecuzione di progetti su misura."
+      }
+    },
+    "clientsList": [
+      "Fundición del Centro, C.A.",
+      "DH Vital, C.A.",
+      "Mamusa Industrial, C.A.",
+      "Instalaciones Mecánicas JLC, C.A.",
+      "Gleason, C.A.",
+      "Windoor House, C.A.",
+      "Embotelladora El Samán"
+    ]
   },
   "contact": {
     "title": "Contattaci",

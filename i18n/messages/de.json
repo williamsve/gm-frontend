@@ -30,7 +30,6 @@
     "about": "Über Uns",
     "services": "Dienstleistungen",
     "works": "Arbeiten",
-    "testimonials": "Referenzen",
     "contact": "Kontakt"
   },
   "hero": {
@@ -64,22 +63,159 @@
     "subtitle": "Kompetenzbereiche in der industriellen Wartung, die wir unseren Kunden anbieten",
     "noResults": "Keine Dienstleistungen verfügbar",
     "loading": "Laden...",
-    "error": "Fehler beim Laden der Dienstleistungen"
+    "error": "Fehler beim Laden der Dienstleistungen",
+    "carousel": {
+      "items": [
+        {
+          "id": 1,
+          "title": "Inspektion und Fehlererkennung",
+          "description": "Frühzeitige Identifizierung von Fehlern zur Vermeidung ungeplanter Ausfälle.",
+          "img": "/services/Inspección y detección de fallas.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Verwaltung von Industrieanlagen",
+          "description": "Umfassende Verwaltung von Anlagen zur Maximierung ihrer Lebensdauer und Leistung.",
+          "img": "/services/Gestión de activos industriales.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Reparatur von mechanischen Geräten",
+          "description": "Korrektive Wartung von Pumpen, Förderern, Ventilen sowie pneumatischen und ölhydraulischen Systemen.",
+          "img": "/services/reparacion_de_equipos_mecanicos.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Reparatur von Tanks",
+          "description": "Spezialisierte Reparatur- und Wartungsdienstleistungen für industrielle Tanks.",
+          "img": "/services/reparacion de tanques.jpg"
+        },
+        {
+          "id": 5,
+          "title": "Niederspannungsinstallation und Netzanschluss für Produktionslinien",
+          "description": "Planung und Installation von Niederspannungsnetzen für Produktionslinien.",
+          "img": "/services/mantenimientoElectrico.jpg"
+        },
+        {
+          "id": 6,
+          "title": "Planung, Fertigung und Lieferung von MCCs, Schalttafeln und Feldinstallation",
+          "description": "Motorsteuerzentralen, Schalttafeln und Inbetriebnahme vor Ort.",
+          "img": "/services/diseño fabricacion ccm panel de control.jpg"
+        },
+        {
+          "id": 7,
+          "title": "Automatisierung industrieller Prozesse mit SPS",
+          "description": "Automatisierungslösungen mit speicherprogrammierbaren Steuerungen zur Optimierung von Abläufen.",
+          "img": "/services/automatización.jpg"
+        },
+        {
+          "id": 8,
+          "title": "Optimierung von Produktionslinien",
+          "description": "Kontinuierliche Verbesserung von Produktionsprozessen zur Steigerung der Effizienz und Reduzierung von Verschwendung.",
+          "img": "/services/optimizacion de lineas de produccion.jpg"
+        },
+        {
+          "id": 9,
+          "title": "Planung, Kontrolle und Überwachung von Projekten und großen Anlagenstillständen",
+          "description": "Umfassendes Management von Projekten und geplanten Stillständen zur Minimierung von Ausfallzeiten.",
+          "img": "/services/planificacion control y seguimiento de proyectos.jpg"
+        },
+        {
+          "id": 10,
+          "title": "Qualitätskurse im Instandhaltungsmanagement",
+          "description": "Spezialisierte Schulung in Best Practices und Qualitätsmanagement der Instandhaltung.",
+          "img": "/services/cursos de calidad en gestion de mantenimiento.jpg"
+        },
+        {
+          "id": 11,
+          "title": "Grundkurse in Kesselwartung und -betrieb",
+          "description": "Grundlegende Schulung in Betrieb und Wartung von Kesselsystemen.",
+          "img": "/services/mantenimientoCalderas.jpg"
+        },
+        {
+          "id": 12,
+          "title": "Kesselwartung nach COVENIN-Normen",
+          "description": "Kesselwartungsservice unter Einhaltung der geltenden COVENIN-Vorschriften.",
+          "img": "/services/mantenimiento de calderas segun normas covenin.jpg"
+        }
+      ]
+    },
+    "items": {
+      "mecanico": {
+        "title": "Präventive und Korrektive Mechanische Instandhaltung",
+        "items": [
+          "Inspektion und Fehlererkennung.",
+          "Reparatur mechanischer Ausrüstung: Pumpen, Förderbänder, Ventile, pneumatische Systeme, ölhydraulische Systeme, Verschließmaschinen, Verpackungsmaschinen und andere.",
+          "Austausch von Lagern und Dichtungen.",
+          "Reparatur von Tanks."
+        ]
+      },
+      "electrico": {
+        "title": "Präventive und Korrektive Elektrische und Instrumentierungsinstandhaltung",
+        "items": [
+          "Installation von Niederspannungsstrom für Produktionslinien.",
+          "Design, Fertigung und Lieferung von MCCs, Schalttafeln und Feldinstallation.",
+          "Automatisierung industrieller Prozesse mit SPS.",
+          "Optimierung von Produktionslinien."
+        ]
+      },
+      "calderas": {
+        "title": "Kesselwartung nach COVENIN-Normen",
+        "items": [
+          "Planung, Kontrolle und Überwachung von Projekten und großen Anlagenstillständen.",
+          "Qualitätskurse in Instandhaltungsmanagement.",
+          "Grundkurse in Kesselwartung und -betrieb."
+        ]
+      }
+    }
   },
   "works": {
-    "title": "Abgeschlossene Projekte",
-    "subtitle": "Projekte für verschiedene Unternehmen der Industrie durchgeführt",
+    "title": "Einige abgeschlossene Arbeiten",
+    "subtitle": "Global Mantenimiento C.A. hat verschiedene Arbeiten für Unternehmen im Industriesektor durchgeführt",
     "viewProject": "Projekt Ansehen",
     "noProjects": "Keine Projekte verfügbar",
     "yearsExperience": "Jahre Erfahrung",
     "projectsCompleted": "Abgeschlossene Projekte",
     "satisfiedClients": "Zufriedene Kunden",
-    "technicalSupport": "Technischer Support"
-  },
-  "testimonials": {
-    "title": "Was unsere Kunden sagen",
-    "subtitle": "Mit mehr als 500 erfolgreichen Projekten, dies sind Referenzen von einigen unserer zufriedenen Kunden",
-    "noTestimonials": "Keine Referenzen verfügbar"
+    "technicalSupport": "Technischer Support",
+    "servicesPerformed": "Durchgeführte Dienstleistungen:",
+    "clients": "Ausgewählte Kunden:",
+    "projects": {
+      "mantenimiento": {
+        "title": "Industrielle Wartung",
+        "description": "Reparatur und präventive sowie korrektive Wartung von mechanischen und elektrischen Geräten.",
+        "details": "Umfassende Wartungsdienstleistungen zur Gewährleistung der Betriebskontinuität."
+      },
+      "calderas": {
+        "title": "Kesselwartung",
+        "description": "Wartung und Zertifizierung von Kesseln nach COVENIN-Normen.",
+        "details": "Planung und Durchführung von großen Anlagenstillständen."
+      },
+      "filtros": {
+        "title": "Filterwartung",
+        "description": "Wartung von Schlauchfiltern, Förderern und Abfüllmaschinen.",
+        "details": "Optimierung von Filtrations- und Fördersystemen."
+      },
+      "plc": {
+        "title": "SPS-Programmierung",
+        "description": "Programmierung und Automatisierung industrieller Prozesse mit SPS.",
+        "details": "Design und Implementierung von automatisierten Steuerungssystemen."
+      },
+      "soluciones": {
+        "title": "Technische Lösungen",
+        "description": "Technische Lösungen für spezialisierte Wartung.",
+        "details": "Beratung und Ausführung von maßgeschneiderten Projekten."
+      }
+    },
+    "clientsList": [
+      "Fundición del Centro, C.A.",
+      "DH Vital, C.A.",
+      "Mamusa Industrial, C.A.",
+      "Instalaciones Mecánicas JLC, C.A.",
+      "Gleason, C.A.",
+      "Windoor House, C.A.",
+      "Embotelladora El Samán"
+    ]
   },
   "contact": {
     "title": "Kontaktieren Sie Uns",

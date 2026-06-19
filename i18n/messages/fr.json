@@ -30,7 +30,6 @@
     "about": "À Propos",
     "services": "Services",
     "works": "Travaux",
-    "testimonials": "Témoignages",
     "contact": "Contact"
   },
   "hero": {
@@ -64,22 +63,159 @@
     "subtitle": "Domaines d'expertise en maintenance industrielle que nous proposons à nos clients",
     "noResults": "Aucun service disponible",
     "loading": "Chargement...",
-    "error": "Erreur lors du chargement des services"
+    "error": "Erreur lors du chargement des services",
+    "carousel": {
+      "items": [
+        {
+          "id": 1,
+          "title": "Inspection et détection de pannes",
+          "description": "Identification précoce des pannes pour éviter des arrêts non planifiés.",
+          "img": "/services/Inspección y detección de fallas.jpg"
+        },
+        {
+          "id": 2,
+          "title": "Gestion des actifs industriels",
+          "description": "Administration complète des actifs pour maximiser leur durée de vie et leurs performances.",
+          "img": "/services/Gestión de activos industriales.jpg"
+        },
+        {
+          "id": 3,
+          "title": "Réparation d'équipements mécaniques",
+          "description": "Maintenance corrective des pompes, transporteurs, vannes et systèmes pneumatiques et oléohydrauliques.",
+          "img": "/services/reparacion_de_equipos_mecanicos.jpg"
+        },
+        {
+          "id": 4,
+          "title": "Réparation de réservoirs",
+          "description": "Services spécialisés de réparation et de maintenance de réservoirs industriels.",
+          "img": "/services/reparacion de tanques.jpg"
+        },
+        {
+          "id": 5,
+          "title": "Installation et raccordement électrique basse tension pour lignes de production",
+          "description": "Conception et installation de réseaux électriques basse tension pour lignes de production.",
+          "img": "/services/mantenimientoElectrico.jpg"
+        },
+        {
+          "id": 6,
+          "title": "Conception, fabrication et fourniture de CCM, tableaux de commande et installation sur site",
+          "description": "Centres de contrôle moteur, tableaux de commande et mise en service sur site.",
+          "img": "/services/diseño fabricacion ccm panel de control.jpg"
+        },
+        {
+          "id": 7,
+          "title": "Automatisation des processus industriels avec PLC",
+          "description": "Solutions d'automatisation avec automates programmables pour optimiser les opérations.",
+          "img": "/services/automatización.jpg"
+        },
+        {
+          "id": 8,
+          "title": "Optimisation des lignes de production",
+          "description": "Amélioration continue des processus de production pour augmenter l'efficacité et réduire les gaspillages.",
+          "img": "/services/optimizacion de lineas de produccion.jpg"
+        },
+        {
+          "id": 9,
+          "title": "Planification, contrôle et suivi de projets et d'arrêts majeurs d'usine",
+          "description": "Gestion complète des projets et des arrêts programmés pour minimiser les temps d'arrêt.",
+          "img": "/services/planificacion control y seguimiento de proyectos.jpg"
+        },
+        {
+          "id": 10,
+          "title": "Cours de qualité en gestion de la maintenance",
+          "description": "Formation spécialisée dans les bonnes pratiques et la gestion de la qualité de la maintenance.",
+          "img": "/services/cursos de calidad en gestion de mantenimiento.jpg"
+        },
+        {
+          "id": 11,
+          "title": "Cours de base de maintenance et d'opération de chaudières",
+          "description": "Formation fondamentale sur l'opération et la maintenance des systèmes de chaudières.",
+          "img": "/services/mantenimientoCalderas.jpg"
+        },
+        {
+          "id": 12,
+          "title": "Maintenance de Chaudières selon les Normes COVENIN",
+          "description": "Service de maintenance de chaudières conforme aux réglementations COVENIN en vigueur.",
+          "img": "/services/mantenimiento de calderas segun normas covenin.jpg"
+        }
+      ]
+    },
+    "items": {
+      "mecanico": {
+        "title": "Maintenance Mécanique Préventive et Corrective",
+        "items": [
+          "Inspection et détection de pannes.",
+          "Réparation d'équipements mécaniques: pompes, transporteurs, vannes, systèmes pneumatiques, systèmes oléohydrauliques, capsage, emballage et autres.",
+          "Remplacement des roulements et des joints.",
+          "Réparation de réservoirs."
+        ]
+      },
+      "electrico": {
+        "title": "Maintenance Électrique et Instrumentation Préventive et Corrective",
+        "items": [
+          "Installation électrique basse tension pour lignes de production.",
+          "Conception, fabrication et fourniture de CCM, tableaux de commande et installation sur site.",
+          "Automatisation des processus industriels avec PLC.",
+          "Optimisation des lignes de production."
+        ]
+      },
+      "calderas": {
+        "title": "Maintenance de Chaudières selon les Normes COVENIN",
+        "items": [
+          "Planification, contrôle et suivi de projets et d'arrêts majeurs d'usine.",
+          "Cours de qualité en gestion de la maintenance.",
+          "Cours de base de maintenance et d'opération de chaudières."
+        ]
+      }
+    }
   },
   "works": {
-    "title": "Projets Réalisés",
-    "subtitle": "Projets réalisés pour différentes entreprises du secteur industriel",
+    "title": "Quelques travaux réalisés",
+    "subtitle": "Global Mantenimiento C.A. a réalisé divers travaux pour des entreprises du secteur industriel",
     "viewProject": "Voir le Projet",
     "noProjects": "Aucun projet disponible",
     "yearsExperience": "Années d'Expérience",
     "projectsCompleted": "Projets Terminés",
     "satisfiedClients": "Clients Satisfaits",
-    "technicalSupport": "Support Technique"
-  },
-  "testimonials": {
-    "title": "Ce que disent nos clients",
-    "subtitle": "Avec plus de 500 projets réussis, voici les témoignages de certains de nos clients satisfaits",
-    "noTestimonials": "Aucun témoignage disponible"
+    "technicalSupport": "Support Technique",
+    "servicesPerformed": "Services réalisés:",
+    "clients": "Clients en vedette:",
+    "projects": {
+      "mantenimiento": {
+        "title": "Maintenance Industrielle",
+        "description": "Réparation et maintenance préventive et corrective des équipements mécaniques et électriques.",
+        "details": "Services de maintenance complets pour garantir la continuité opérationnelle."
+      },
+      "calderas": {
+        "title": "Maintenance de Chaudières",
+        "description": "Maintenance et certification de chaudières selon les normes COVENIN.",
+        "details": "Planification et exécution des arrêts majeurs d'usine."
+      },
+      "filtros": {
+        "title": "Maintenance des Filtres",
+        "description": "Maintenance des filtres à manches, transporteurs et remplisseuses.",
+        "details": "Optimisation des systèmes de filtration et de transport."
+      },
+      "plc": {
+        "title": "Programmation PLC",
+        "description": "Programmation et automatisation des processus industriels avec PLC.",
+        "details": "Conception et mise en œuvre de systèmes de contrôle automatisés."
+      },
+      "soluciones": {
+        "title": "Solutions Techniques",
+        "description": "Solutions techniques de maintenance spécialisée.",
+        "details": "Conseil et exécution de projets sur mesure."
+      }
+    },
+    "clientsList": [
+      "Fundición del Centro, C.A.",
+      "DH Vital, C.A.",
+      "Mamusa Industrial, C.A.",
+      "Instalaciones Mecánicas JLC, C.A.",
+      "Gleason, C.A.",
+      "Windoor House, C.A.",
+      "Embotelladora El Samán"
+    ]
   },
   "contact": {
     "title": "Contactez-nous",
